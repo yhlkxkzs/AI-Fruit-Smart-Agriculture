@@ -1,0 +1,20 @@
+{
+  "time": "2026-04-24T14:16:54.364727",
+  "class": "apple",
+  "confidence": 0.9994571805000305,
+  "low_confidence": false,
+  "top_k": [
+    {
+      "class": "apple",
+      "confidence": 0.9994571805000305
+    },
+    {
+      "class": "tomato",
+      "confidence": 0.0005067630554549396
+    },
+    {
+      "class": "orange",
+      "confidence": 2.4280390789499506e-05
+    }
+  ]
+}

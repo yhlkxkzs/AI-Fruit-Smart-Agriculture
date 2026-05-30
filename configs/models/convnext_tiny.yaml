@@ -1,0 +1,4 @@
+task_id: fruit_classification
+model: convnext_tiny
+timm_name: convnext_tiny
+tier: server_reference

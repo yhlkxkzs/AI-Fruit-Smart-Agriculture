@@ -1,0 +1,58 @@
+首次训练（无 --resume）
+EfficientNet-Lite0  DATA=/home/yuhanlin/APP/AFSA/task1_fruit_classification/dataset_cls SAVE_DIR=/home/yuhanlin/APP/AFSA/task1_fruit_classification/train_detection/runs/efficientnet_lite0 EPOCHS=50
+'[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)' thrown while requesting HEAD https://huggingface.co/timm/tf_efficientnet_lite0.in1k/resolve/main/model.safetensors
+Retrying in 1s [Retry 1/5].
+Using device: cuda  model: efficientnet_lite0
+Training with 10 classes: ['almond', 'apple', 'broccoli', 'grape', 'lemon', 'mango', 'peach', 'pear', 'strawberry', 'tomato']
+  [Warn] 预训练权重下载/加载失败，将使用 pretrained=False 继续训练。原因: Cannot send a request, as the client has been closed.
+Epoch 1/50  train_loss=0.7941  train_acc=0.7689  val_acc=0.7993  best=0.7993
+Epoch 2/50  train_loss=0.3581  train_acc=0.8870  val_acc=0.8907  best=0.8907
+Epoch 3/50  train_loss=0.2716  train_acc=0.9144  val_acc=0.9471  best=0.9471
+Epoch 4/50  train_loss=0.2057  train_acc=0.9376  val_acc=0.9307  best=0.9471
+Epoch 5/50  train_loss=0.1806  train_acc=0.9417  val_acc=0.9240  best=0.9471
+Epoch 6/50  train_loss=0.1571  train_acc=0.9515  val_acc=0.9764  best=0.9764
+Epoch 7/50  train_loss=0.1693  train_acc=0.9491  val_acc=0.9600  best=0.9764
+Epoch 8/50  train_loss=0.1114  train_acc=0.9650  val_acc=0.9748  best=0.9764
+Epoch 9/50  train_loss=0.1215  train_acc=0.9640  val_acc=0.9861  best=0.9861
+Epoch 10/50  train_loss=0.1218  train_acc=0.9629  val_acc=0.9892  best=0.9892
+Epoch 11/50  train_loss=0.1214  train_acc=0.9608  val_acc=0.9923  best=0.9923
+Epoch 12/50  train_loss=0.1246  train_acc=0.9631  val_acc=0.9918  best=0.9923
+Epoch 13/50  train_loss=0.0924  train_acc=0.9721  val_acc=0.9872  best=0.9923
+Epoch 14/50  train_loss=0.0882  train_acc=0.9724  val_acc=0.9954  best=0.9954
+Epoch 15/50  train_loss=0.0756  train_acc=0.9781  val_acc=0.9979  best=0.9979
+Epoch 16/50  train_loss=0.0846  train_acc=0.9745  val_acc=0.9820  best=0.9979
+Epoch 17/50  train_loss=0.0791  train_acc=0.9755  val_acc=0.9543  best=0.9979
+Epoch 18/50  train_loss=0.0813  train_acc=0.9738  val_acc=0.9836  best=0.9979
+Epoch 19/50  train_loss=0.0711  train_acc=0.9787  val_acc=0.9918  best=0.9979
+Epoch 20/50  train_loss=0.0924  train_acc=0.9729  val_acc=0.9831  best=0.9979
+Epoch 21/50  train_loss=0.0747  train_acc=0.9778  val_acc=0.9923  best=0.9979
+Epoch 22/50  train_loss=0.0589  train_acc=0.9810  val_acc=0.9779  best=0.9979
+Epoch 23/50  train_loss=0.0646  train_acc=0.9790  val_acc=0.9831  best=0.9979
+Epoch 24/50  train_loss=0.0818  train_acc=0.9750  val_acc=0.9944  best=0.9979
+Epoch 25/50  train_loss=0.0652  train_acc=0.9802  val_acc=0.9954  best=0.9979
+Epoch 26/50  train_loss=0.0779  train_acc=0.9776  val_acc=0.9969  best=0.9979
+Epoch 27/50  train_loss=0.0405  train_acc=0.9868  val_acc=0.9949  best=0.9979
+Epoch 28/50  train_loss=0.0486  train_acc=0.9863  val_acc=0.9954  best=0.9979
+Epoch 29/50  train_loss=0.0432  train_acc=0.9871  val_acc=0.9928  best=0.9979
+Epoch 30/50  train_loss=0.0750  train_acc=0.9783  val_acc=0.9985  best=0.9985
+Epoch 31/50  train_loss=0.0521  train_acc=0.9831  val_acc=0.9995  best=0.9995
+Epoch 32/50  train_loss=0.0415  train_acc=0.9869  val_acc=0.9523  best=0.9995
+Epoch 33/50  train_loss=0.0411  train_acc=0.9861  val_acc=0.9949  best=0.9995
+Epoch 34/50  train_loss=0.0514  train_acc=0.9845  val_acc=0.9990  best=0.9995
+Epoch 35/50  train_loss=0.0377  train_acc=0.9881  val_acc=1.0000  best=1.0000
+Epoch 36/50  train_loss=0.0887  train_acc=0.9748  val_acc=0.9974  best=1.0000
+Epoch 37/50  train_loss=0.0346  train_acc=0.9892  val_acc=0.9969  best=1.0000
+Epoch 38/50  train_loss=0.0326  train_acc=0.9891  val_acc=0.9918  best=1.0000
+Epoch 39/50  train_loss=0.0394  train_acc=0.9875  val_acc=0.9979  best=1.0000
+Epoch 40/50  train_loss=0.0297  train_acc=0.9913  val_acc=0.9974  best=1.0000
+Epoch 41/50  train_loss=0.0329  train_acc=0.9902  val_acc=0.9974  best=1.0000
+Epoch 42/50  train_loss=0.0320  train_acc=0.9899  val_acc=0.9918  best=1.0000
+Epoch 43/50  train_loss=0.0338  train_acc=0.9903  val_acc=0.9964  best=1.0000
+Epoch 44/50  train_loss=0.0804  train_acc=0.9765  val_acc=0.9969  best=1.0000
+Epoch 45/50  train_loss=0.0200  train_acc=0.9938  val_acc=0.9985  best=1.0000
+Epoch 46/50  train_loss=0.0271  train_acc=0.9909  val_acc=0.9985  best=1.0000
+Epoch 47/50  train_loss=0.0269  train_acc=0.9931  val_acc=0.9974  best=1.0000
+Epoch 48/50  train_loss=0.0428  train_acc=0.9867  val_acc=1.0000  best=1.0000
+Epoch 49/50  train_loss=0.0223  train_acc=0.9934  val_acc=0.9974  best=1.0000
+Epoch 50/50  train_loss=0.0476  train_acc=0.9855  val_acc=0.9990  best=1.0000
+Best val_acc=1.0000, saved to /home/yuhanlin/APP/AFSA/task1_fruit_classification/train_detection/runs/efficientnet_lite0/weights/best.pt

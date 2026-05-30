@@ -1,0 +1,4 @@
+task_id: fruit_classification
+model: shufflenet_v2
+timm_name: shufflenet_v2_x1_0
+tier: mobile_ultra_light_x1_0

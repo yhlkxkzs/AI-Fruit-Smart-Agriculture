@@ -1,0 +1,4 @@
+task_id: fruit_classification
+model: vit_tiny
+timm_name: deit_tiny_patch16_224
+tier: server_explore

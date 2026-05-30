@@ -1,0 +1,4 @@
+task_id: fruit_classification
+model: efficientnet_lite4
+timm_name: tf_efficientnet_lite4
+tier: mobile_high

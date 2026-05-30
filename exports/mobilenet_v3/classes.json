@@ -1,0 +1,1 @@
+{"task_id":"fruit_classification","model_type":"mobilenet_v3","num_classes":6,"classes":["almond","apple","grape","lemon","mango","tomato"]}

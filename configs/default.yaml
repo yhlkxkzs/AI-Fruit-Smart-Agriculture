@@ -1,0 +1,27 @@
+# 水果分类 — 默认配置
+task_id: fruit_classification
+task_type: classification
+
+# 数据（ImageFolder: data/fruit_classification/{train,val,test}/<class>/）
+data_root: data/fruit_classification
+train_split: train
+val_split: val
+test_split: test
+
+num_classes: 10  # 按 data/ 下实际类别数修改
+
+# 训练
+model: efficientnet_lite0
+pretrained: true
+image_size: 224
+batch_size: 32
+epochs: 50
+learning_rate: 0.001
+num_workers: 4
+device: cuda
+
+# 输出
+runs_dir: tasks/fruit_classification/runs
+exports_dir: tasks/fruit_classification/exports
+
+# 对比实验：复制为 configs/models/<backbone>.yaml 并改 model 字段

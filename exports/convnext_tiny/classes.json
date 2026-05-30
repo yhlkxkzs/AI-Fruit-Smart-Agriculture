@@ -1,0 +1,32 @@
+{
+  "model_type": "dual_head_convnext_tiny",
+  "model_id": "convnext_tiny",
+  "timm_name": "convnext_tiny",
+  "num_species": 11,
+  "num_states": 7,
+  "species_classes": [
+    "apple",
+    "cherry",
+    "grape",
+    "lemon",
+    "mango",
+    "orange",
+    "pear",
+    "pistachio",
+    "strawberry",
+    "tomato",
+    "other"
+  ],
+  "state_classes": [
+    "healthy",
+    "immature",
+    "mature",
+    "aged",
+    "diseased",
+    "pest",
+    "unknown"
+  ],
+  "task_type": "classification_multistate",
+  "best_score": 0.9850419051512673,
+  "run_dir": "/data1/yuhanlin/APP/AFSA/tasks/fruit_classification/runs/multistate/convnext_tiny_20260530_003433"
+}

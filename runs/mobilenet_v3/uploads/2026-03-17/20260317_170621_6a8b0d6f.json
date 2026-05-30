@@ -1,0 +1,69 @@
+{
+  "time": "2026-03-17T17:06:21.472524",
+  "class": "tomato",
+  "confidence": 0.9997238516807556,
+  "all_scores": null,
+  "consistent": false,
+  "model_results": [
+    {
+      "model": "mobilenet_v3",
+      "class": "apple",
+      "confidence": 0.6074468493461609,
+      "low_confidence": false,
+      "top_k": [
+        {
+          "class": "apple",
+          "confidence": 0.6074468493461609
+        },
+        {
+          "class": "tomato",
+          "confidence": 0.2509618401527405
+        },
+        {
+          "class": "cherry",
+          "confidence": 0.13286304473876953
+        }
+      ]
+    },
+    {
+      "model": "efficientnet_lite0",
+      "class": "tomato",
+      "confidence": 0.9997238516807556,
+      "low_confidence": false,
+      "top_k": [
+        {
+          "class": "tomato",
+          "confidence": 0.9997238516807556
+        },
+        {
+          "class": "apple",
+          "confidence": 0.0002691670670174062
+        },
+        {
+          "class": "grape",
+          "confidence": 6.236110948520945e-06
+        }
+      ]
+    },
+    {
+      "model": "shufflenet_v2",
+      "class": "tomato",
+      "confidence": 0.9970784187316895,
+      "low_confidence": false,
+      "top_k": [
+        {
+          "class": "tomato",
+          "confidence": 0.9970784187316895
+        },
+        {
+          "class": "apple",
+          "confidence": 0.002916374010965228
+        },
+        {
+          "class": "grape",
+          "confidence": 5.119376055517932e-06
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+train=91373 val=19568 device=cuda model=mobilenet_v3 timm=mobilenetv3_large_100
+Traceback (most recent call last):
+  File "/data1/yuhanlin/APP/AFSA/tasks/fruit_classification/scripts/train_multistate.py", line 259, in <module>
+    main()
+    ~~~~^^
+  File "/data1/yuhanlin/APP/AFSA/tasks/fruit_classification/scripts/train_multistate.py", line 219, in main
+    tr_loss, tr_sp, tr_st = train_one_epoch(
+                            ~~~~~~~~~~~~~~~^
+        model, train_loader, crit_sp, crit_st, opt, device, args.state_weight
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/data1/yuhanlin/APP/AFSA/tasks/fruit_classification/scripts/train_multistate.py", line 118, in train_one_epoch
+    sp_logits, st_logits = model(x)
+                           ~~~~~^^^
+  File "/home/yuhanlin/miniconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/yuhanlin/miniconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/data1/yuhanlin/APP/AFSA/tasks/fruit_classification/scripts/train_multistate.py", line 106, in forward
+    return self.head_species(feat), self.head_state(feat)
+           ~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/yuhanlin/miniconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/yuhanlin/miniconda3/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/yuhanlin/miniconda3/lib/python3.13/site-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (64x1280 and 960x11)
+train=91373 val=19568 device=cuda model=mobilenet_v3 timm=mobilenetv3_large_100
+Downloading: "https://download.pytorch.org/models/mobilenet_v3_large-8738ca79.pth" to /home/yuhanlin/.cache/torch/hub/checkpoints/mobilenet_v3_large-8738ca79.pth
+  0%|          | 0.00/21.1M [00:00<?, ?B/s]  1%|          | 128k/21.1M [00:00<01:08, 323kB/s]  1%|          | 256k/21.1M [00:00<00:45, 477kB/s]  2%|▏         | 384k/21.1M [00:00<00:32, 666kB/s]  3%|▎         | 640k/21.1M [00:00<00:21, 1.01MB/s]  5%|▍         | 1.00M/21.1M [00:00<00:13, 1.61MB/s]  7%|▋         | 1.50M/21.1M [00:01<00:08, 2.41MB/s] 11%|█         | 2.25M/21.1M [00:01<00:05, 3.68MB/s] 15%|█▌        | 3.25M/21.1M [00:01<00:03, 5.32MB/s] 22%|██▏       | 4.62M/21.1M [00:01<00:02, 7.66MB/s] 32%|███▏      | 6.75M/21.1M [00:01<00:01, 11.4MB/s] 40%|███▉      | 8.38M/21.1M [00:01<00:01, 12.9MB/s] 50%|█████     | 10.6M/21.1M [00:01<00:00, 15.7MB/s] 58%|█████▊    | 12.2M/21.1M [00:01<00:00, 15.8MB/s] 67%|██████▋   | 14.1M/21.1M [00:01<00:00, 16.7MB/s] 75%|███████▍  | 15.8M/21.1M [00:02<00:00, 16.3MB/s] 82%|████████▏ | 17.4M/21.1M [00:02<00:00, 15.5MB/s] 90%|████████▉ | 19.0M/21.1M [00:02<00:00, 12.7MB/s]100%|██████████| 21.1M/21.1M [00:02<00:00, 9.04MB/s]

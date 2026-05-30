@@ -1,0 +1,55 @@
+首次训练（无 --resume）
+ShuffleNet V2 (x1_0)  DATA=/home/yuhanlin/APP/AFSA/task1_fruit_classification/dataset_cls SAVE_DIR=/home/yuhanlin/APP/AFSA/task1_fruit_classification/train_detection/runs/shufflenet_v2 EPOCHS=50
+Using device: cuda  model: ShuffleNet V2 x1_0
+Training with 10 classes: ['almond', 'apple', 'broccoli', 'grape', 'lemon', 'mango', 'peach', 'pear', 'strawberry', 'tomato']
+Epoch 1/50  train_loss=0.3225  train_acc=0.9442  val_acc=0.9851  best=0.9851
+Epoch 2/50  train_loss=0.0557  train_acc=0.9839  val_acc=0.9938  best=0.9938
+Epoch 3/50  train_loss=0.0408  train_acc=0.9873  val_acc=1.0000  best=1.0000
+Epoch 4/50  train_loss=0.0210  train_acc=0.9935  val_acc=0.9995  best=1.0000
+Epoch 5/50  train_loss=0.0200  train_acc=0.9941  val_acc=0.9995  best=1.0000
+Epoch 6/50  train_loss=0.0132  train_acc=0.9972  val_acc=0.9995  best=1.0000
+Epoch 7/50  train_loss=0.0115  train_acc=0.9962  val_acc=0.9995  best=1.0000
+Epoch 8/50  train_loss=0.0258  train_acc=0.9921  val_acc=0.9985  best=1.0000
+Epoch 9/50  train_loss=0.0118  train_acc=0.9967  val_acc=0.9990  best=1.0000
+Epoch 10/50  train_loss=0.0158  train_acc=0.9956  val_acc=0.9985  best=1.0000
+Epoch 11/50  train_loss=0.0137  train_acc=0.9950  val_acc=0.9995  best=1.0000
+Epoch 12/50  train_loss=0.0189  train_acc=0.9951  val_acc=0.9995  best=1.0000
+Epoch 13/50  train_loss=0.0090  train_acc=0.9975  val_acc=0.9964  best=1.0000
+Epoch 14/50  train_loss=0.0114  train_acc=0.9966  val_acc=0.9990  best=1.0000
+Epoch 15/50  train_loss=0.0088  train_acc=0.9978  val_acc=0.9995  best=1.0000
+Epoch 16/50  train_loss=0.0051  train_acc=0.9982  val_acc=0.9990  best=1.0000
+Epoch 17/50  train_loss=0.0026  train_acc=0.9992  val_acc=0.9969  best=1.0000
+Epoch 18/50  train_loss=0.0180  train_acc=0.9946  val_acc=0.9995  best=1.0000
+Epoch 19/50  train_loss=0.0152  train_acc=0.9956  val_acc=1.0000  best=1.0000
+Epoch 20/50  train_loss=0.0044  train_acc=0.9989  val_acc=0.9995  best=1.0000
+Epoch 21/50  train_loss=0.0156  train_acc=0.9959  val_acc=0.9990  best=1.0000
+Epoch 22/50  train_loss=0.0059  train_acc=0.9980  val_acc=0.9995  best=1.0000
+Epoch 23/50  train_loss=0.0025  train_acc=0.9995  val_acc=1.0000  best=1.0000
+Epoch 24/50  train_loss=0.0026  train_acc=0.9993  val_acc=1.0000  best=1.0000
+Epoch 25/50  train_loss=0.0100  train_acc=0.9973  val_acc=1.0000  best=1.0000
+Epoch 26/50  train_loss=0.0093  train_acc=0.9969  val_acc=0.9995  best=1.0000
+Epoch 27/50  train_loss=0.0130  train_acc=0.9969  val_acc=0.9990  best=1.0000
+Epoch 28/50  train_loss=0.0151  train_acc=0.9954  val_acc=0.9995  best=1.0000
+Epoch 29/50  train_loss=0.0076  train_acc=0.9980  val_acc=1.0000  best=1.0000
+Epoch 30/50  train_loss=0.0027  train_acc=0.9992  val_acc=1.0000  best=1.0000
+Epoch 31/50  train_loss=0.0050  train_acc=0.9983  val_acc=0.9990  best=1.0000
+Epoch 32/50  train_loss=0.0101  train_acc=0.9973  val_acc=0.9944  best=1.0000
+Epoch 33/50  train_loss=0.0069  train_acc=0.9981  val_acc=1.0000  best=1.0000
+Epoch 34/50  train_loss=0.0073  train_acc=0.9979  val_acc=0.9995  best=1.0000
+Epoch 35/50  train_loss=0.0084  train_acc=0.9977  val_acc=1.0000  best=1.0000
+Epoch 36/50  train_loss=0.0139  train_acc=0.9956  val_acc=1.0000  best=1.0000
+Epoch 37/50  train_loss=0.0048  train_acc=0.9987  val_acc=0.9995  best=1.0000
+Epoch 38/50  train_loss=0.0024  train_acc=0.9992  val_acc=0.9995  best=1.0000
+Epoch 39/50  train_loss=0.0060  train_acc=0.9983  val_acc=0.9995  best=1.0000
+Epoch 40/50  train_loss=0.0116  train_acc=0.9965  val_acc=0.9974  best=1.0000
+Epoch 41/50  train_loss=0.0050  train_acc=0.9983  val_acc=0.9990  best=1.0000
+Epoch 42/50  train_loss=0.0061  train_acc=0.9981  val_acc=1.0000  best=1.0000
+Epoch 43/50  train_loss=0.0076  train_acc=0.9979  val_acc=0.9995  best=1.0000
+Epoch 44/50  train_loss=0.0108  train_acc=0.9979  val_acc=0.9995  best=1.0000
+Epoch 45/50  train_loss=0.0040  train_acc=0.9986  val_acc=0.9995  best=1.0000
+Epoch 46/50  train_loss=0.0052  train_acc=0.9981  val_acc=0.9985  best=1.0000
+Epoch 47/50  train_loss=0.0110  train_acc=0.9966  val_acc=1.0000  best=1.0000
+Epoch 48/50  train_loss=0.0097  train_acc=0.9976  val_acc=0.9969  best=1.0000
+Epoch 49/50  train_loss=0.0048  train_acc=0.9985  val_acc=0.9995  best=1.0000
+Epoch 50/50  train_loss=0.0027  train_acc=0.9991  val_acc=0.9995  best=1.0000
+Best val_acc=1.0000, saved to /home/yuhanlin/APP/AFSA/task1_fruit_classification/train_detection/runs/shufflenet_v2/weights/best.pt

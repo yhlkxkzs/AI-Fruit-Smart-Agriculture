@@ -1,0 +1,69 @@
+{
+  "time": "2026-04-24T14:16:54.363628",
+  "class": "apple",
+  "confidence": 0.9998,
+  "all_scores": null,
+  "consistent": true,
+  "model_results": [
+    {
+      "model": "mobilenet_v3",
+      "class": "apple",
+      "confidence": 1.0,
+      "low_confidence": false,
+      "top_k": [
+        {
+          "class": "apple",
+          "confidence": 1.0
+        },
+        {
+          "class": "orange",
+          "confidence": 3.626000395456319e-18
+        },
+        {
+          "class": "pear",
+          "confidence": 7.090290419127942e-20
+        }
+      ]
+    },
+    {
+      "model": "efficientnet_lite0",
+      "class": "apple",
+      "confidence": 0.9994571805000305,
+      "low_confidence": false,
+      "top_k": [
+        {
+          "class": "apple",
+          "confidence": 0.9994571805000305
+        },
+        {
+          "class": "tomato",
+          "confidence": 0.0005067630554549396
+        },
+        {
+          "class": "orange",
+          "confidence": 2.4280390789499506e-05
+        }
+      ]
+    },
+    {
+      "model": "shufflenet_v2",
+      "class": "apple",
+      "confidence": 1.0,
+      "low_confidence": false,
+      "top_k": [
+        {
+          "class": "apple",
+          "confidence": 1.0
+        },
+        {
+          "class": "tomato",
+          "confidence": 2.670974830198958e-10
+        },
+        {
+          "class": "strawberry",
+          "confidence": 3.0492188635156126e-11
+        }
+      ]
+    }
+  ]
+}

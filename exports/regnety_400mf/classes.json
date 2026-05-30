@@ -1,0 +1,32 @@
+{
+  "model_type": "dual_head_regnety_400mf",
+  "model_id": "regnety_400mf",
+  "timm_name": "regnety_004",
+  "num_species": 11,
+  "num_states": 7,
+  "species_classes": [
+    "apple",
+    "cherry",
+    "grape",
+    "lemon",
+    "mango",
+    "orange",
+    "pear",
+    "pistachio",
+    "strawberry",
+    "tomato",
+    "other"
+  ],
+  "state_classes": [
+    "healthy",
+    "immature",
+    "mature",
+    "aged",
+    "diseased",
+    "pest",
+    "unknown"
+  ],
+  "task_type": "classification_multistate",
+  "best_score": 0.9886702780049059,
+  "run_dir": "/data1/yuhanlin/APP/AFSA/tasks/fruit_classification/runs/multistate/regnety_400mf_20260530_003432"
+}

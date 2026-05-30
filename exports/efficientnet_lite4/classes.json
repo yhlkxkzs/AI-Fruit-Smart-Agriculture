@@ -1,0 +1,32 @@
+{
+  "model_type": "dual_head_efficientnet_lite4",
+  "model_id": "efficientnet_lite4",
+  "timm_name": "tf_efficientnet_lite4",
+  "num_species": 11,
+  "num_states": 7,
+  "species_classes": [
+    "apple",
+    "cherry",
+    "grape",
+    "lemon",
+    "mango",
+    "orange",
+    "pear",
+    "pistachio",
+    "strawberry",
+    "tomato",
+    "other"
+  ],
+  "state_classes": [
+    "healthy",
+    "immature",
+    "mature",
+    "aged",
+    "diseased",
+    "pest",
+    "unknown"
+  ],
+  "task_type": "classification_multistate",
+  "best_score": 0.9882767784137367,
+  "run_dir": "/data1/yuhanlin/APP/AFSA/tasks/fruit_classification/runs/multistate/efficientnet_lite4_20260530_003433"
+}

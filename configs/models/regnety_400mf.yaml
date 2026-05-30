@@ -1,0 +1,4 @@
+task_id: fruit_classification
+model: regnety_400mf
+timm_name: regnety_004
+tier: server_reference

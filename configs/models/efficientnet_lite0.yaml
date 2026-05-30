@@ -1,0 +1,4 @@
+task_id: fruit_classification
+model: efficientnet_lite0
+timm_name: tf_efficientnet_lite0
+tier: deploy_github

@@ -1,0 +1,4 @@
+task_id: fruit_classification
+model: mobilevit_s
+timm_name: mobilevit_s
+tier: mobile_high

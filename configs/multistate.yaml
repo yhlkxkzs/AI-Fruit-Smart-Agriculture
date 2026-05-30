@@ -1,0 +1,22 @@
+# 水果分类 — 品种 + 状态（双头）
+task_id: fruit_classification
+task_type: classification_multistate
+
+data_root: data/fruit_classification_multistate
+manifest_dir: data/fruit_classification_multistate/manifest
+labelmap_species: data/fruit_classification_multistate/labelmap_species.json
+labelmap_state: data/fruit_classification_multistate/labelmap_state.json
+
+num_species: 11   # 10 + other
+num_states: 7     # 6 + unknown
+
+model: efficientnet_lite0
+timm_name: tf_efficientnet_lite0
+pretrained: true
+image_size: 224
+batch_size: 32
+epochs: 50
+learning_rate: 0.001
+
+runs_dir: tasks/fruit_classification/runs/multistate
+exports_dir: tasks/fruit_classification/exports

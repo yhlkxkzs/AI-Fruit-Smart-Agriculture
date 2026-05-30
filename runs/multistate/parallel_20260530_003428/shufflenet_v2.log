@@ -1,0 +1,30 @@
+train=91373 val=19568 device=cuda model=shufflenet_v2 timm=shufflenet_v2_x1_0
+[warn] pretrained=False fallback: Unknown model (shufflenet_v2_x1_0)
+Traceback (most recent call last):
+  File "/data1/yuhanlin/APP/AFSA/tasks/fruit_classification/scripts/train_multistate.py", line 96, in __init__
+    self.backbone = timm.create_model(timm_name, pretrained=pretrained, num_classes=0)
+                    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuhanlin/miniconda3/lib/python3.13/site-packages/timm/models/_factory.py", line 134, in create_model
+    raise RuntimeError('Unknown model (%s)' % model_name)
+RuntimeError: Unknown model (shufflenet_v2_x1_0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data1/yuhanlin/APP/AFSA/tasks/fruit_classification/scripts/train_multistate.py", line 259, in <module>
+    main()
+    ~~~~^^
+  File "/data1/yuhanlin/APP/AFSA/tasks/fruit_classification/scripts/train_multistate.py", line 197, in main
+    model = DualHeadClassifier(
+            ~~~~~~~~~~~~~~~~~~^
+        timm_name, len(species_names), len(state_names), pretrained=pretrained
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ).to(device)
+    ^
+  File "/data1/yuhanlin/APP/AFSA/tasks/fruit_classification/scripts/train_multistate.py", line 99, in __init__
+    self.backbone = timm.create_model(timm_name, pretrained=False, num_classes=0)
+                    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/yuhanlin/miniconda3/lib/python3.13/site-packages/timm/models/_factory.py", line 134, in create_model
+    raise RuntimeError('Unknown model (%s)' % model_name)
+RuntimeError: Unknown model (shufflenet_v2_x1_0)
+train=91373 val=19568 device=cuda model=shufflenet_v2 timm=torchvision

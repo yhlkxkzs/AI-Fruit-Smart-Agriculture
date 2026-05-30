@@ -1,0 +1,4 @@
+task_id: fruit_classification
+model: resnet18
+timm_name: resnet18
+tier: baseline

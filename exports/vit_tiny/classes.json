@@ -1,0 +1,32 @@
+{
+  "model_type": "dual_head_vit_tiny",
+  "model_id": "vit_tiny",
+  "timm_name": "deit_tiny_patch16_224",
+  "num_species": 11,
+  "num_states": 7,
+  "species_classes": [
+    "apple",
+    "cherry",
+    "grape",
+    "lemon",
+    "mango",
+    "orange",
+    "pear",
+    "pistachio",
+    "strawberry",
+    "tomato",
+    "other"
+  ],
+  "state_classes": [
+    "healthy",
+    "immature",
+    "mature",
+    "aged",
+    "diseased",
+    "pest",
+    "unknown"
+  ],
+  "task_type": "classification_multistate",
+  "best_score": 0.9852974243663123,
+  "run_dir": "/data1/yuhanlin/APP/AFSA/tasks/fruit_classification/runs/multistate/vit_tiny_20260530_003433"
+}
