@@ -1,0 +1,21 @@
+{
+  "repo": "fruits-classifiaction-for-afsa",
+  "exports_root": "exports",
+  "category_models": [
+    {
+      "github_model_id": "deploy_efficientnet_lite0",
+      "export_dir": "production_lite0_singlehead_10class",
+      "note": "App 主模型槽位；当前为 10 类单头，multistate 上线后替换 best.pt"
+    },
+    { "github_model_id": "efficientnet_lite0", "export_dir": "efficientnet_lite0" },
+    { "github_model_id": "mobilenet_v3", "export_dir": "mobilenet_v3" },
+    { "github_model_id": "shufflenet_v2", "export_dir": "shufflenet_v2" },
+    { "github_model_id": "efficientnet_lite4", "export_dir": "efficientnet_lite4" },
+    { "github_model_id": "mobilevit_s", "export_dir": "mobilevit_s" },
+    { "github_model_id": "efficientnetv2_s", "export_dir": "efficientnetv2_s" },
+    { "github_model_id": "convnext_tiny", "export_dir": "convnext_tiny" },
+    { "github_model_id": "regnety_400mf", "export_dir": "regnety_400mf" },
+    { "github_model_id": "resnet18", "export_dir": "resnet18" },
+    { "github_model_id": "vit_tiny", "export_dir": "vit_tiny" }
+  ]
+}

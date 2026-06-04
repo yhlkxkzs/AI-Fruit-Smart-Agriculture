@@ -11,14 +11,14 @@
 
 | source_id | 路径 |
 |-----------|------|
-| fruitvision | `Database/local/database/FruitVision.../` |
-| rawripe | `Database/github/database/RawRipe/` |
-| banana_ripening | `Database/local/database/Banana_Ripening_Process/banana/` |
-| tomato_ripeness | `Database/local/database/tomato_ripeness_detection/` |
-| riseholme_strawberry | `Database/local/database/riseholme_strawberry_classification_2021/` |
-| tomato_plant | `Database/github/database/tomato_plant/` |
-| lemon_qc | `Database/github/database/lemon-datase/` |
-| apple_scab | `Database/github/database/AppleScabFDs/` |
+| fruitvision | `Database/datasets/database/FruitVision.../` |
+| rawripe | `Database/datasets/database/RawRipe/` |
+| banana_ripening | `Database/datasets/database/Banana_Ripening_Process/banana/` |
+| tomato_ripeness | `Database/datasets/database/tomato_ripeness_detection/` |
+| riseholme_strawberry | `Database/datasets/database/riseholme_strawberry_classification_2021/` |
+| tomato_plant | `Database/datasets/database/tomato_plant/` |
+| lemon_qc | `Database/datasets/database/lemon-datase/` |
+| apple_scab | `Database/datasets/database/AppleScabFDs/` |
 | afsa_species_only | `data/fruit_classification/`（state=unknown） |
 
 ## 状态 6+1 类
@@ -27,7 +27,22 @@
 
 ## 品种
 
-标准 10 类 + `other`（香蕉等记入 other）。
+26 类：原 17 类 + `avocado` `bean` `broccoli` `chestnut` `cucumber` `eggplant` `hogplum` `jackfruit` `soybean` + `other`（未识别 fallback）。
+
+各数据源按**原始种类文件夹/标注**映射为对应品种。
+
+## 新增数据源（2026 审查接入）
+
+| source_id | 路径 | 品种 | 说明 |
+|-----------|------|------|------|
+| rangeland_avocado | `rangeland_weeds_australia/avocados/` | avocado | 仅取 avocados 子集 |
+| bean_disease_uganda | `bean_disease_uganda/beans/` | bean | 子目录为病害/健康状态 |
+| ghai_broccoli_detection | `ghai_broccoli_detection/broccolis/` | broccoli | |
+| chestnut | `chestnut/chestnuts/` | chestnut | 产区子目录 → state mostly unknown |
+| cucumber_disease | `cucumber_disease_classification/cucumbers/` | cucumber | 病害子目录 |
+| eggplant_preprocessed | `eggplant_preprocessed_2026/eggplants/` | eggplant | healthy / rejected |
+| fruits_od_detection | `Fruits Images Dataset_Object Detection/fruits/` | hogplum, jackfruit | 仅这两类 |
+| vegann_soybean | `vegann_multicrop_presence_segmentation/soybeans/` | soybean | images/ 仅 |
 
 ## 命令
 

@@ -1,37 +1,33 @@
 # convnext_tiny
 
-**Multistate 双头模型**（11 品种 + 7 状态），2026-05-30 并行训练已完成。
+**Multistate 双头**（**275** 品种 + 7 状态），timm 骨干 `convnext_tiny`。
 
-| 项目 | 值 |
-|------|-----|
-| timm 骨干 | `convnext_tiny` |
-| best_score | 0.9850 |
-| val 品种 | 99.42% |
-| val 状态 | 95.53% |
-| 训练 run | `runs/multistate/convnext_tiny_20260530_003433` |
+## 训练状态（2026-06-04）
 
-| 文件 | 说明 |
+| 项目 | 说明 |
 |------|------|
-| `best.pt` | 本地约 **107 MB**；**未上传 GitHub**（超过 100 MB 限制，见根目录 `.gitignore`） |
-| `classes.json` | 品种/状态标签与指标；**已在 GitHub** |
+| 全量 manifest | ~55 万样本，50 epoch 并行训练 **进行中** |
+| 当前 `exports/best.pt` | 约 **107 MB**（可能为旧 run 权重，训练结束后由脚本覆盖） |
+| GitHub | **`best.pt` 暂不上传**（单文件 >100 MB 会被拒绝） |
+| GitHub 已含 | 本 README、`classes.json`（训练结束后更新指标） |
 
-从训练 run 复制权重：
+本地权重路径（训练完成后）：
 
 ```bash
-cp tasks/fruit_classification/runs/multistate/convnext_tiny_20260530_003433/weights/best.pt \
-   tasks/fruit_classification/exports/convnext_tiny/best.pt
-```
+# 自动写入
+ls -lh exports/convnext_tiny/best.pt
 
-若需分享大权重，可用 GitHub Release、Git LFS 或网盘/Hugging Face，并在文档中附下载链接。
+# 或从 run 目录复制
+cp runs/multistate/convnext_tiny_*/weights/best.pt exports/convnext_tiny/best.pt
+```
 
 ## 为何 GitHub 上没有 `best.pt`
 
 | 项目 | 说明 |
 |------|------|
-| 本地文件 | `exports/convnext_tiny/best.pt`（约 **107 MB**） |
-| 未上传原因 | GitHub **硬性拒绝单文件 > 100 MB**；push 时会被 pre-receive hook 拦截 |
-| 仓库处理 | 根目录 `.gitignore` 已排除该文件；**训练已完成，权重仅保存在本机/服务器** |
-| GitHub 上有什么 | 本 README、`classes.json`（含 score 与 run 路径）；**不含** `.pt` |
-| 本地备用路径 | `runs/multistate/convnext_tiny_20260530_003433/weights/best.pt`（同样未进 Git） |
+| 体积 | 约 **107 MB** |
+| 限制 | GitHub **硬性拒绝** >100 MB 的单文件 |
+| 仓库 | 根目录 `.gitignore` 已排除 |
+| 分发建议 | GitHub Release 附件、Git LFS、网盘或 Hugging Face |
 
-其他模型权重若 < 100 MB，一般可正常 push；本模型因体积超限必须本地保存或通过 Release / LFS / 外链分发。
+Actions 推理：缺少 `best.pt` 时该模型会被 **skip**，不影响其它 10 个模型。

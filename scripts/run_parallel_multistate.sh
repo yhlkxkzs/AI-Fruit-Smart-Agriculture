@@ -32,13 +32,6 @@ launch() {
   local log="$LOG_DIR/${model_id}.log"
 
   if [[ "$SKIP_DONE" == "1" ]]; then
-    if [[ "$model_id" == "efficientnet_lite0" && -f tasks/fruit_classification/exports/efficientnet_lite0_multistate/best.pt ]]; then
-      echo "[skip] $model_id (已有 multistate 权重，同步到 exports/efficientnet_lite0/)"
-      mkdir -p "tasks/fruit_classification/exports/efficientnet_lite0"
-      cp -a tasks/fruit_classification/exports/efficientnet_lite0_multistate/best.pt "$export_pt"
-      cp -a tasks/fruit_classification/exports/efficientnet_lite0_multistate/classes.json "$export_json" 2>/dev/null || true
-      return 0
-    fi
     if [[ -f "$export_json" ]] && grep -q classification_multistate "$export_json" 2>/dev/null; then
       echo "[skip] $model_id (已有 multistate export)"
       return 0

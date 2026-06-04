@@ -7,7 +7,7 @@ manifest_dir: data/fruit_classification_multistate/manifest
 labelmap_species: data/fruit_classification_multistate/labelmap_species.json
 labelmap_state: data/fruit_classification_multistate/labelmap_state.json
 
-num_species: 11   # 10 + other
+num_species: 275   # BASE + temp/species_mapping.json (264 fruits + crops + other)
 num_states: 7     # 6 + unknown
 
 model: efficientnet_lite0

@@ -16,10 +16,11 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[3]
 TASK_DIR = Path(__file__).resolve().parents[1]
 OUT_ROOT = REPO_ROOT / "data" / "fruit_classification_multistate"
-LOCAL_DB = Path("/home/yuhanlin/Database/local/database")
-GITHUB_DB = Path("/home/yuhanlin/Database/github/database")
+DB_ROOT = Path("/home/yuhanlin/Database/datasets/database")
+TEMP_ROOT = Path("/home/yuhanlin/Database/datasets/temp")
+SPECIES_MAP_FILE = TEMP_ROOT / "species_mapping.json"
 
-SPECIES = [
+BASE_SPECIES = [
     "apple",
     "cherry",
     "grape",
@@ -30,6 +31,21 @@ SPECIES = [
     "pistachio",
     "strawberry",
     "tomato",
+    "banana",
+    "coconut",
+    "guava",
+    "papaya",
+    "pomegranate",
+    "litchi",
+    "avocado",
+    "bean",
+    "broccoli",
+    "chestnut",
+    "cucumber",
+    "eggplant",
+    "hogplum",
+    "jackfruit",
+    "soybean",
     "other",
 ]
 STATES = ["healthy", "immature", "mature", "aged", "diseased", "pest", "unknown"]
@@ -54,15 +70,54 @@ SPECIES_ALIASES = {
     "strawberries": "strawberry",
     "tomato": "tomato",
     "tomatoes": "tomato",
-    "banana": "other",
-    "bananas": "other",
-    "coconut": "other",
-    "coconuts": "other",
-    "guava": "other",
-    "papaya": "other",
-    "pomegranate": "other",
-    "litchi": "other",
+    "banana": "banana",
+    "bananas": "banana",
+    "coconut": "coconut",
+    "coconuts": "coconut",
+    "guava": "guava",
+    "guavas": "guava",
+    "papaya": "papaya",
+    "papayas": "papaya",
+    "pomegranate": "pomegranate",
+    "pomegranates": "pomegranate",
+    "litchi": "litchi",
+    "litchis": "litchi",
+    "avocado": "avocado",
+    "avocados": "avocado",
+    "bean": "bean",
+    "beans": "bean",
+    "broccoli": "broccoli",
+    "broccolis": "broccoli",
+    "chestnut": "chestnut",
+    "chestnuts": "chestnut",
+    "cucumber": "cucumber",
+    "cucumbers": "cucumber",
+    "eggplant": "eggplant",
+    "eggplants": "eggplant",
+    "hogplum": "hogplum",
+    "hogpulm": "hogplum",
+    "jackfruit": "jackfruit",
+    "jackfruits": "jackfruit",
+    "soybean": "soybean",
+    "soybeans": "soybean",
 }
+
+DATASET_DEFAULT_SPECIES: dict[str, str] = {}
+
+
+def load_temp_species_mapping() -> None:
+    global SPECIES, SPECIES_ALIASES, STATE_ALIASES, DATASET_DEFAULT_SPECIES
+    SPECIES = list(BASE_SPECIES)
+    if not SPECIES_MAP_FILE.is_file():
+        return
+    data = json.loads(SPECIES_MAP_FILE.read_text(encoding="utf-8"))
+    SPECIES = data.get("species") or SPECIES
+    SPECIES_ALIASES.update(data.get("species_aliases") or {})
+    STATE_ALIASES.update(data.get("state_aliases_extra") or {})
+    DATASET_DEFAULT_SPECIES.update(data.get("dataset_default_species") or {})
+
+
+SPECIES = list(BASE_SPECIES)
 
 STATE_ALIASES = {
     "fresh": "healthy",
@@ -96,9 +151,28 @@ STATE_ALIASES = {
     "blemish": "diseased",
     "greening": "diseased",
     "occluded": "unknown",
+    "rejected": "diseased",
+    "angular_leaf_spot": "diseased",
+    "bean_rust": "diseased",
+    "anthracnose": "diseased",
+    "bacterial_wilt": "diseased",
+    "belly_rot": "diseased",
+    "downy_mildew": "diseased",
+    "gummy_stem_blight": "diseased",
+    "pythium_fruit_rot": "diseased",
+    "fresh_cucumber": "healthy",
+    "fresh_leaf": "healthy",
 }
 
 IMG_EXT = {".jpg", ".jpeg", ".png", ".bmp", ".webp", ".tif", ".tiff"}
+MANIFEST_ROOT = Path("/home/yuhanlin")
+
+
+def manifest_path(path: Path) -> str:
+    resolved = str(path.resolve())
+    if resolved.startswith("/data1/yuhanlin"):
+        return str(MANIFEST_ROOT / Path(resolved).relative_to("/data1/yuhanlin"))
+    return resolved
 
 
 def find_image(stem: str, folder: Path) -> Path | None:
@@ -145,7 +219,7 @@ def add_record(
         return
     records.append(
         {
-            "path": str(path.resolve()),
+            "path": manifest_path(path),
             "species": sp,
             "state": st,
             "source": source,
@@ -153,9 +227,25 @@ def add_record(
     )
 
 
+def collect_flat_images(
+    records: list[dict],
+    images_root: Path,
+    source: str,
+    species: str,
+    state: str = "unknown",
+) -> int:
+    if not images_root.is_dir():
+        return 0
+    n = 0
+    for img in iter_images(images_root):
+        add_record(records, img, species, state, source)
+        n += 1
+    return n
+
+
 def collect_fruitvision(records: list[dict]) -> int:
     """Use per-fruit folders Apple/Banana/.../Fresh|Rotten|Formalin-mixed only."""
-    root = LOCAL_DB / (
+    root = DB_ROOT / (
         "FruitVision A Benchmark Dataset for Fresh, Rotten, and Formalin-mixed Fruit Detection"
     )
     if not root.is_dir():
@@ -177,7 +267,7 @@ def collect_fruitvision(records: list[dict]) -> int:
 
 
 def collect_rawripe(records: list[dict]) -> int:
-    root = GITHUB_DB / "RawRipe"
+    root = DB_ROOT / "RawRipe"
     if not root.is_dir():
         return 0
     n = 0
@@ -224,6 +314,8 @@ def collect_papaya_subdirs(
             continue
         images = sub / "images"
         if not images.is_dir():
+            images = sub / "color" / "images"
+        if not images.is_dir():
             continue
         st = sub.name
         sp = species if species else sub.name
@@ -234,12 +326,12 @@ def collect_papaya_subdirs(
 
 
 def collect_banana_ripening(records: list[dict]) -> int:
-    root = LOCAL_DB / "Banana_Ripening_Process" / "banana"
+    root = DB_ROOT / "Banana_Ripening_Process" / "banana"
     return collect_papaya_subdirs(records, root, "banana_ripening", "banana")
 
 
 def collect_tomato_ripeness(records: list[dict]) -> int:
-    root = LOCAL_DB / "tomato_ripeness_detection"
+    root = DB_ROOT / "tomato_ripeness_detection"
     n = collect_papaya_subdirs(records, root / "tomatoes", "tomato_ripeness", "tomato")
     if n:
         return n
@@ -247,12 +339,12 @@ def collect_tomato_ripeness(records: list[dict]) -> int:
 
 
 def collect_riseholme(records: list[dict]) -> int:
-    root = LOCAL_DB / "riseholme_strawberry_classification_2021"
+    root = DB_ROOT / "riseholme_strawberry_classification_2021"
     return collect_papaya_subdirs(records, root / "strawberries", "riseholme_strawberry", "strawberry")
 
 
 def collect_tomato_plant(records: list[dict]) -> int:
-    root = GITHUB_DB / "tomato_plant" / "tomatoes"
+    root = DB_ROOT / "tomato_plant" / "tomatoes"
     images = root / "images"
     if not images.is_dir():
         return 0
@@ -282,7 +374,7 @@ def collect_tomato_plant(records: list[dict]) -> int:
 
 
 def collect_lemon_qc(records: list[dict]) -> int:
-    root = GITHUB_DB / "lemon-datase" / "lemons"
+    root = DB_ROOT / "lemon-datase" / "lemons"
     if not root.is_dir():
         return 0
     n = collect_papaya_subdirs(records, root, "lemon_qc", "lemon")
@@ -295,9 +387,9 @@ def collect_lemon_qc(records: list[dict]) -> int:
 
 
 def collect_apple_scab(records: list[dict]) -> int:
-    root = GITHUB_DB / "AppleScabFDs" / "apples"
+    root = DB_ROOT / "AppleScabFDs" / "apples"
     if not root.is_dir():
-        root = GITHUB_DB / "AppleScabFDs"
+        root = DB_ROOT / "AppleScabFDs"
     return collect_papaya_subdirs(records, root, "apple_scab", "apple")
 
 
@@ -313,6 +405,104 @@ def collect_afsa_species(records: list[dict]) -> int:
                 continue
             for img in iter_images(sp_dir):
                 add_record(records, img, sp_dir.name, "unknown", "afsa_species_only")
+                n += 1
+    return n
+
+
+def collect_rangeland_avocado(records: list[dict]) -> int:
+    root = DB_ROOT / "rangeland_weeds_australia" / "avocados" / "images"
+    return collect_flat_images(records, root, "rangeland_avocado", "avocado")
+
+
+def collect_bean_disease(records: list[dict]) -> int:
+    root = DB_ROOT / "bean_disease_uganda" / "beans"
+    return collect_papaya_subdirs(records, root, "bean_disease_uganda", "bean")
+
+
+def collect_broccoli_detection(records: list[dict]) -> int:
+    root = DB_ROOT / "ghai_broccoli_detection" / "broccolis" / "images"
+    return collect_flat_images(records, root, "ghai_broccoli_detection", "broccoli")
+
+
+def collect_chestnut(records: list[dict]) -> int:
+    root = DB_ROOT / "chestnut" / "chestnuts"
+    return collect_papaya_subdirs(records, root, "chestnut", "chestnut")
+
+
+def collect_cucumber_disease(records: list[dict]) -> int:
+    root = DB_ROOT / "cucumber_disease_classification" / "cucumbers"
+    return collect_papaya_subdirs(records, root, "cucumber_disease", "cucumber")
+
+
+def collect_eggplant(records: list[dict]) -> int:
+    root = DB_ROOT / "eggplant_preprocessed_2026" / "eggplants"
+    return collect_papaya_subdirs(records, root, "eggplant_preprocessed", "eggplant")
+
+
+def collect_fruits_od_hogplum_jackfruit(records: list[dict]) -> int:
+    fruits_root = DB_ROOT / "Fruits Images Dataset_Object Detection" / "fruits"
+    n = 0
+    for species in ("hogplum", "jackfruit"):
+        images = fruits_root / species / "color" / "images"
+        n += collect_flat_images(records, images, "fruits_od_detection", species)
+    return n
+
+
+def collect_vegann_soybean(records: list[dict]) -> int:
+    root = DB_ROOT / "vegann_multicrop_presence_segmentation" / "soybeans" / "images"
+    return collect_flat_images(records, root, "vegann_soybean", "soybean")
+
+
+def collect_temp_datasets(records: list[dict]) -> int:
+    """Standardized PV datasets under Database/datasets/temp/."""
+    if not TEMP_ROOT.is_dir():
+        return 0
+    skip = {"scripts", "__pycache__"}
+    n = 0
+    for ds in sorted(TEMP_ROOT.iterdir()):
+        if not ds.is_dir() or ds.name in skip:
+            continue
+        if not (ds / ".standardized.json").is_file():
+            continue
+        mains = [
+            p
+            for p in ds.iterdir()
+            if p.is_dir() and p.name not in {"data", "annotations", "scripts"}
+        ]
+        if not mains:
+            continue
+        main = mains[0]
+        source = f"temp/{ds.name}"
+
+        if ds.name == "Fruits-262" or main.name.startswith("fruits_262"):
+            for cls_dir in sorted(main.iterdir()):
+                if not cls_dir.is_dir():
+                    continue
+                images = cls_dir / "images"
+                if not images.is_dir():
+                    continue
+                for img in iter_images(images):
+                    add_record(records, img, cls_dir.name, "unknown", source)
+                    n += 1
+            continue
+
+        default_sp = DATASET_DEFAULT_SPECIES.get(ds.name, ds.name)
+        for cls_dir in sorted(main.iterdir()):
+            if not cls_dir.is_dir():
+                continue
+            images = cls_dir / "images"
+            if not images.is_dir():
+                continue
+            cls_sp = norm_species(cls_dir.name)
+            sp = norm_species(default_sp)
+            if sp == "other" and cls_sp != "other":
+                sp = cls_sp
+            if cls_sp == sp or cls_sp == "other":
+                st = cls_dir.name
+            else:
+                st = cls_dir.name
+            for img in iter_images(images):
+                add_record(records, img, sp, st, source)
                 n += 1
     return n
 
@@ -408,6 +598,8 @@ def main() -> None:
     p.add_argument("--copy-images", action="store_true")
     args = p.parse_args()
 
+    load_temp_species_mapping()
+
     records: list[dict] = []
     collectors = [
         ("fruitvision", collect_fruitvision),
@@ -419,6 +611,15 @@ def main() -> None:
         ("lemon_qc", collect_lemon_qc),
         ("apple_scab", collect_apple_scab),
         ("afsa_species_only", collect_afsa_species),
+        ("rangeland_avocado", collect_rangeland_avocado),
+        ("bean_disease_uganda", collect_bean_disease),
+        ("ghai_broccoli_detection", collect_broccoli_detection),
+        ("chestnut", collect_chestnut),
+        ("cucumber_disease", collect_cucumber_disease),
+        ("eggplant_preprocessed", collect_eggplant),
+        ("fruits_od_detection", collect_fruits_od_hogplum_jackfruit),
+        ("vegann_soybean", collect_vegann_soybean),
+        ("temp_datasets", collect_temp_datasets),
     ]
     source_counts: dict[str, int] = {}
     for name, fn in collectors:

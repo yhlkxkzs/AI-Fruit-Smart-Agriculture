@@ -1,21 +1,9 @@
 # vit_tiny
 
-**Multistate 双头模型**（11 品种 + 7 状态），2026-05-30 并行训练已完成。
+Multistate **275 品种 + 7 状态** 双头权重（`deit_tiny_patch16_224`）。
 
-| 项目 | 值 |
-|------|-----|
-| timm 骨干 | `deit_tiny_patch16_224` |
-| best_score | 0.9853 |
-| val 品种 | 99.49% |
-| val 状态 | 96.17% |
-| 训练 run | `runs/multistate/vit_tiny_20260530_003433` |
+- **`github_model_id`**: `vit_tiny`
+- 训练结束由 `train_multistate.py` 自动写入本目录
+- 同步：`git push`（本仓即 `tasks/fruit_classification/`）
 
-| 文件 | 说明 |
-|------|------|
-| `best.pt` | 约 21 MB；**已在 GitHub** |
-| `classes.json` | 品种/状态标签与指标 |
-
-```bash
-cp tasks/fruit_classification/runs/multistate/vit_tiny_20260530_003433/weights/best.pt \
-   tasks/fruit_classification/exports/vit_tiny/best.pt
-```
+App 端需在 `github_fruit_classification_targets.dart` 注册 `vit_tiny`。

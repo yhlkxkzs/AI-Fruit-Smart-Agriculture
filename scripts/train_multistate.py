@@ -12,8 +12,10 @@ from pathlib import Path
 
 import torch
 import torch.nn as nn
-from PIL import Image
+from PIL import Image, ImageFile
 from torch.utils.data import DataLoader, Dataset
+
+ImageFile.LOAD_TRUNCATED_IMAGES = True
 from torchvision import transforms
 
 try:
@@ -47,7 +49,16 @@ def load_yaml_simple(path: Path) -> dict:
 
 def resolve_path(raw: str) -> Path | None:
     p = Path(raw.strip().strip('"'))
-    candidates = [p, Path(str(p).replace("/data1/yuhanlin", "/home/yuhanlin"))]
+    replacements = [
+        ("/data1/yuhanlin", "/home/yuhanlin"),
+        ("/Database/local/database/", "/Database/datasets/database/"),
+        ("/Database/github/database/", "/Database/datasets/database/"),
+    ]
+    candidates = [p]
+    s = str(p)
+    for old, new in replacements:
+        if old in s:
+            candidates.append(Path(s.replace(old, new)))
     for c in candidates:
         if c.is_file():
             return c
