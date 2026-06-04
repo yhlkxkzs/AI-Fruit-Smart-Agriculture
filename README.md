@@ -47,14 +47,22 @@ bash tasks/fruit_classification/scripts/run_parallel_multistate.sh
 
 ## 上线到 GitHub
 
+本仓配置了两个 remote（同一套本地提交可推到两处）：
+
+| remote | 仓库 | 说明 |
+|--------|------|------|
+| `origin` | [fruits-classifiaction-for-afsa](https://github.com/ai-agriculture-circuits-and-systems/fruits-classifiaction-for-afsa) | 组织推理仓（正式） |
+| `personal` | [AI-Fruit-Smart-Agriculture](https://github.com/yhlkxkzs/AI-Fruit-Smart-Agriculture) | 个人备份仓（有写权限） |
+
 ```bash
-bash scripts/sync_exports_to_github.sh   # 校验 exports（可选）
+bash scripts/sync_exports_to_github.sh   # 校验 exports（在 AFSA 根目录执行）
 cd tasks/fruit_classification
-git add -A
-git status   # 确认未包含 runs/ 与大文件 best.pt
-git commit -m "..."
-git push
+git add -A && git commit -m "..."
+git push origin main      # 组织仓（需 write 权限）
+git push personal main    # 个人仓
 ```
+
+默认跟踪分支：`origin/main`。
 
 ---
 
