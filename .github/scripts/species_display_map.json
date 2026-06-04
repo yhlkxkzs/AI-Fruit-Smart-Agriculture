@@ -320,7 +320,9 @@
     "bananas": "banana",
     "hogpulm": "hogplum",
     "starfruits": "starfruit",
-    "other": "other"
+    "other": "other",
+    "Rotten": "other",
+    "rotten": "other"
   },
   "species": {
     "apple": {

@@ -145,6 +145,9 @@ def main() -> None:
         "species": species_out,
         "states": states_out,
     }
+    # 脏标签修正（manifest 漏标时的状态词误入 species）
+    payload["species_aliases"]["Rotten"] = "other"
+    payload["species_aliases"]["rotten"] = "other"
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(f"wrote {OUT} ({len(species_out)} species, {len(aliases)} aliases)")
