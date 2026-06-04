@@ -137,7 +137,9 @@ def load_routes(images_file: Path) -> list[dict]:
     routes_file = Path("/tmp/afsa_routes.json")
     if routes_file.is_file():
         data = json.loads(routes_file.read_text(encoding="utf-8"))
-        return data.get("routes") or []
+        routes = data.get("routes") or []
+        if routes:
+            return routes
     routes = []
     for line in images_file.read_text(encoding="utf-8").splitlines():
         p = line.strip()
@@ -155,6 +157,9 @@ def main() -> None:
     exports_root = REPO_ROOT / manifest.get("exports_root", "exports")
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     routes = [r for r in load_routes(images_file) if str(r.get("task_type", "")).startswith("fruit")]
+    if not routes:
+        print("[error] no routes to run (check sidecar + image_path)", file=sys.stderr)
+        sys.exit(1)
     ensure_parent()
     OUT.write_text(json.dumps({"predictions": []}, indent=2) + "\n", encoding="utf-8")
 
