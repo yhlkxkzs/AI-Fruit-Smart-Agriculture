@@ -7,6 +7,9 @@ import json
 import sys
 from pathlib import Path
 
+SCRIPT_DIR = Path(__file__).resolve().parent
+REPO_ROOT = SCRIPT_DIR.parents[1]
+
 
 def sidecar_path(image_path: str) -> Path:
     p = Path(image_path)
@@ -23,7 +26,7 @@ def main() -> None:
         image_path = line.strip()
         if not image_path:
             continue
-        sc = sidecar_path(image_path)
+        sc = REPO_ROOT / sidecar_path(image_path)
         if not sc.is_file():
             print(f"[warn] missing sidecar: {sc}")
             continue

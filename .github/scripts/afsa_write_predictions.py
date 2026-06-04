@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
-"""Append prediction rows to out/predictions.json."""
+"""Append prediction rows to out/predictions.json (repo root)."""
 
 from __future__ import annotations
 
 import json
 from pathlib import Path
 
-OUT = Path("out/predictions.json")
+SCRIPT_DIR = Path(__file__).resolve().parent
+REPO_ROOT = SCRIPT_DIR.parents[1]
+OUT = REPO_ROOT / "out" / "predictions.json"
 
 
 def ensure_parent() -> None:

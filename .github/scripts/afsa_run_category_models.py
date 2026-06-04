@@ -15,14 +15,13 @@ from torchvision import transforms
 SCRIPT_DIR = Path(__file__).resolve().parent
 REPO_ROOT = SCRIPT_DIR.parents[1]
 MANIFEST = SCRIPT_DIR / "models_manifest.json"
-OUT = REPO_ROOT / "out" / "predictions.json"
 
 try:
     import timm
 except ImportError:
     timm = None
 
-from afsa_write_predictions import append_row, ensure_parent
+from afsa_write_predictions import OUT, append_row, ensure_parent
 
 
 class DualHeadClassifier(nn.Module):
@@ -90,6 +89,10 @@ def load_model(export_dir: Path, meta: dict, device: torch.device) -> tuple[nn.M
     timm_name = cls_meta.get("timm_name")
     if timm_name and timm is not None:
         model = timm.create_model(timm_name, pretrained=False, num_classes=len(classes))
+    elif model_type in ("efficientnet_lite0", "dual_head_efficientnet_lite0"):
+        if timm is None:
+            raise RuntimeError("timm required for efficientnet_lite0")
+        model = timm.create_model("tf_efficientnet_lite0", pretrained=False, num_classes=len(classes))
     elif model_type == "mobilenet_v3":
         from torchvision.models import mobilenet_v3_large
 

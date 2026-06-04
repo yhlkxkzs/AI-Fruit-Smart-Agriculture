@@ -4,3 +4,4 @@ exports/efficientnetv2_s/best.pt
 runs/
 runs/multistate/convnext_tiny_*/weights/best.pt
 runs/multistate/efficientnetv2_s_*/weights/best.pt
+__pycache__/

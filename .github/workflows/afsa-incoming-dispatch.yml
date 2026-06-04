@@ -44,8 +44,7 @@ jobs:
 
       - name: Run category models (exports/)
         if: steps.chg.outputs.count != '0'
-        working-directory: .github/scripts
-        run: python3 afsa_run_category_models.py /tmp/images.txt
+        run: python3 .github/scripts/afsa_run_category_models.py /tmp/images.txt
 
       - name: Upload predictions artifact
         if: steps.chg.outputs.count != '0'
