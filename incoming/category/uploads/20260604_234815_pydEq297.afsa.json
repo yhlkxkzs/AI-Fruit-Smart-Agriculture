@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "app": "afsa_mobile",
+  "detection_type": "category",
+  "task_type": "fruit_category",
+  "image_path": "incoming/category/uploads/20260604_234815_pydEq297.webp",
+  "github_model_target_id": "category_all",
+  "afsa_detection_id": "rec_1780588095510",
+  "uploaded_at": "2026-06-04T15:48:16.527695Z"
+}
