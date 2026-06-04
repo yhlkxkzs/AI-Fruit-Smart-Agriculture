@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "description": "Map model species_classes / aliases to display names (en + zh)",
+  "version": 2,
+  "description": "Map model species_classes / aliases to display names (en + zh); 275 species",
   "species_aliases": {
     "apple": "apple",
     "cherry": "cherry",
@@ -347,7 +347,7 @@
     },
     "orange": {
       "en": "Orange",
-      "zh": "橙"
+      "zh": "橙子"
     },
     "pear": {
       "en": "Pear",
@@ -391,7 +391,7 @@
     },
     "avocado": {
       "en": "Avocado",
-      "zh": "牛油果"
+      "zh": "鳄梨"
     },
     "bean": {
       "en": "Bean",
@@ -427,11 +427,11 @@
     },
     "abiu": {
       "en": "Abiu",
-      "zh": "Abiu"
+      "zh": "黄金果"
     },
     "acai": {
       "en": "Acai",
-      "zh": "Acai"
+      "zh": "巴西莓"
     },
     "acerola": {
       "en": "Acerola",
@@ -439,11 +439,11 @@
     },
     "achachairu": {
       "en": "Achachairu",
-      "zh": "Achachairu"
+      "zh": "阿恰恰鲁果"
     },
     "ackee": {
       "en": "Ackee",
-      "zh": "Ackee"
+      "zh": "阿开木果"
     },
     "african_plum": {
       "en": "African Plum",
@@ -451,11 +451,11 @@
     },
     "alligator_apple": {
       "en": "Alligator Apple",
-      "zh": "Alligator Apple"
+      "zh": "刺果番荔枝"
     },
     "ambarella": {
       "en": "Ambarella",
-      "zh": "Ambarella"
+      "zh": "南洋李"
     },
     "apricot": {
       "en": "Apricot",
@@ -463,39 +463,39 @@
     },
     "araza": {
       "en": "Araza",
-      "zh": "Araza"
+      "zh": "阿拉扎果"
     },
     "bael": {
       "en": "Bael",
-      "zh": "Bael"
+      "zh": "木苹果"
     },
     "barbadine": {
       "en": "Barbadine",
-      "zh": "Barbadine"
+      "zh": "百香果藤本"
     },
     "barberry": {
       "en": "Barberry",
-      "zh": "Barberry"
+      "zh": "小檗果"
     },
     "bayberry": {
       "en": "Bayberry",
-      "zh": "Bayberry"
+      "zh": "杨梅"
     },
     "beach_plum": {
       "en": "Beach Plum",
-      "zh": "Beach Plum"
+      "zh": "海滩李"
     },
     "bearberry": {
       "en": "Bearberry",
-      "zh": "Bearberry"
+      "zh": "熊果"
     },
     "bignay": {
       "en": "Bignay",
-      "zh": "Bignay"
+      "zh": "比格纳果"
     },
     "bilimbi": {
       "en": "Bilimbi",
-      "zh": "Bilimbi"
+      "zh": "三捻酸"
     },
     "bitter_melon": {
       "en": "Bitter Melon",
@@ -503,7 +503,7 @@
     },
     "black_cherry": {
       "en": "Black Cherry",
-      "zh": "Black Cherry"
+      "zh": "黑樱桃"
     },
     "black_currant": {
       "en": "Black Currant",
@@ -511,11 +511,11 @@
     },
     "black_mullberry": {
       "en": "Black Mullberry",
-      "zh": "Black Mullberry"
+      "zh": "黑桑"
     },
     "black_sapote": {
       "en": "Black Sapote",
-      "zh": "Black Sapote"
+      "zh": "黑柿"
     },
     "blackberry": {
       "en": "Blackberry",
@@ -527,35 +527,35 @@
     },
     "bolwarra": {
       "en": "Bolwarra",
-      "zh": "Bolwarra"
+      "zh": "博尔瓦拉果"
     },
     "brazil_nut": {
       "en": "Brazil Nut",
-      "zh": "Brazil Nut"
+      "zh": "巴西坚果"
     },
     "bread_fruit": {
       "en": "Bread Fruit",
-      "zh": "Bread Fruit"
+      "zh": "面包果"
     },
     "buddhas_hand": {
       "en": "Buddhas Hand",
-      "zh": "Buddhas Hand"
+      "zh": "佛手柑"
     },
     "buffaloberry": {
       "en": "Buffaloberry",
-      "zh": "Buffaloberry"
+      "zh": "水牛莓"
     },
     "burdekin_plum": {
       "en": "Burdekin Plum",
-      "zh": "Burdekin Plum"
+      "zh": "伯克金李"
     },
     "burmese_grape": {
       "en": "Burmese Grape",
-      "zh": "Burmese Grape"
+      "zh": "缅甸葡萄"
     },
     "caimito": {
       "en": "Caimito",
-      "zh": "Caimito"
+      "zh": "金星果"
     },
     "camu_camu": {
       "en": "Camu Camu",
@@ -563,39 +563,39 @@
     },
     "canistel": {
       "en": "Canistel",
-      "zh": "Canistel"
+      "zh": "蛋黄果"
     },
     "cape_gooseberry": {
       "en": "Cape Gooseberry",
-      "zh": "Cape Gooseberry"
+      "zh": "灯笼果"
     },
     "carambola": {
       "en": "Carambola",
-      "zh": "Carambola"
+      "zh": "杨桃"
     },
     "cardon": {
       "en": "Cardon",
-      "zh": "Cardon"
+      "zh": "刺角瓜"
     },
     "cedar_bay_cherry": {
       "en": "Cedar Bay Cherry",
-      "zh": "Cedar Bay Cherry"
+      "zh": "雪松湾樱桃"
     },
     "cempedak": {
       "en": "Cempedak",
-      "zh": "Cempedak"
+      "zh": "香波罗蜜"
     },
     "ceylon_gooseberry": {
       "en": "Ceylon Gooseberry",
-      "zh": "Ceylon Gooseberry"
+      "zh": "锡兰醋栗"
     },
     "che": {
       "en": "Che",
-      "zh": "Che"
+      "zh": "柘"
     },
     "chenet": {
       "en": "Chenet",
-      "zh": "Chenet"
+      "zh": "梅尔塞塔"
     },
     "cherimoya": {
       "en": "Cherimoya",
@@ -603,27 +603,27 @@
     },
     "chico": {
       "en": "Chico",
-      "zh": "Chico"
+      "zh": "人心果"
     },
     "chokeberry": {
       "en": "Chokeberry",
-      "zh": "Chokeberry"
+      "zh": "稠李"
     },
     "clementine": {
       "en": "Clementine",
-      "zh": "Clementine"
+      "zh": "克莱门氏小柑橘"
     },
     "cloudberry": {
       "en": "Cloudberry",
-      "zh": "Cloudberry"
+      "zh": "云莓"
     },
     "cluster_fig": {
       "en": "Cluster Fig",
-      "zh": "Cluster Fig"
+      "zh": "聚果榕"
     },
     "cocoa_bean": {
       "en": "Cocoa Bean",
-      "zh": "可可"
+      "zh": "可可豆"
     },
     "coffee": {
       "en": "Coffee",
@@ -631,19 +631,19 @@
     },
     "common_buckthorn": {
       "en": "Common Buckthorn",
-      "zh": "Common Buckthorn"
+      "zh": "鼠李"
     },
     "corn_kernel": {
       "en": "Corn Kernel",
-      "zh": "玉米"
+      "zh": "玉米粒"
     },
     "cornelian_cherry": {
       "en": "Cornelian Cherry",
-      "zh": "Cornelian Cherry"
+      "zh": "山茱萸"
     },
     "crab_apple": {
       "en": "Crab Apple",
-      "zh": "Crab Apple"
+      "zh": "海棠"
     },
     "cranberry": {
       "en": "Cranberry",
@@ -651,11 +651,11 @@
     },
     "crowberry": {
       "en": "Crowberry",
-      "zh": "Crowberry"
+      "zh": "乌鸦莓"
     },
     "cupuacu": {
       "en": "Cupuacu",
-      "zh": "Cupuacu"
+      "zh": "古布阿苏"
     },
     "custard_apple": {
       "en": "Custard Apple",
@@ -663,7 +663,7 @@
     },
     "damson": {
       "en": "Damson",
-      "zh": "Damson"
+      "zh": "西洋李"
     },
     "date": {
       "en": "Date",
@@ -671,15 +671,15 @@
     },
     "desert_fig": {
       "en": "Desert Fig",
-      "zh": "Desert Fig"
+      "zh": "沙漠无花果"
     },
     "desert_lime": {
       "en": "Desert Lime",
-      "zh": "Desert Lime"
+      "zh": "沙漠青柠"
     },
     "dewberry": {
       "en": "Dewberry",
-      "zh": "Dewberry"
+      "zh": "露莓"
     },
     "dragonfruit": {
       "en": "Dragonfruit",
@@ -691,23 +691,23 @@
     },
     "elderberry": {
       "en": "Elderberry",
-      "zh": "Elderberry"
+      "zh": "接骨木莓"
     },
     "elephant_apple": {
       "en": "Elephant Apple",
-      "zh": "Elephant Apple"
+      "zh": "象苹果"
     },
     "emblic": {
       "en": "Emblic",
-      "zh": "Emblic"
+      "zh": "油柑"
     },
     "entawak": {
       "en": "Entawak",
-      "zh": "Entawak"
+      "zh": "恩塔瓦克瓜"
     },
     "etrog": {
       "en": "Etrog",
-      "zh": "Etrog"
+      "zh": "香橼"
     },
     "feijoa": {
       "en": "Feijoa",
@@ -715,7 +715,7 @@
     },
     "fibrous_satinash": {
       "en": "Fibrous Satinash",
-      "zh": "Fibrous Satinash"
+      "zh": "纤维缎果"
     },
     "fig": {
       "en": "Fig",
@@ -723,23 +723,23 @@
     },
     "finger_lime": {
       "en": "Finger Lime",
-      "zh": "Finger Lime"
+      "zh": "指橙"
     },
     "galia_melon": {
       "en": "Galia Melon",
-      "zh": "Galia Melon"
+      "zh": "伽利略甜瓜"
     },
     "gandaria": {
       "en": "Gandaria",
-      "zh": "Gandaria"
+      "zh": "贡德里果"
     },
     "genipap": {
       "en": "Genipap",
-      "zh": "Genipap"
+      "zh": "基尼帕果"
     },
     "goji": {
       "en": "Goji",
-      "zh": "Goji"
+      "zh": "枸杞"
     },
     "gooseberry": {
       "en": "Gooseberry",
@@ -747,7 +747,7 @@
     },
     "goumi": {
       "en": "Goumi",
-      "zh": "Goumi"
+      "zh": "胡颓子"
     },
     "grapefruit": {
       "en": "Grapefruit",
@@ -755,31 +755,31 @@
     },
     "greengage": {
       "en": "Greengage",
-      "zh": "Greengage"
+      "zh": "青梅"
     },
     "grenadilla": {
       "en": "Grenadilla",
-      "zh": "Grenadilla"
+      "zh": "西番莲"
     },
     "guanabana": {
       "en": "Guanabana",
-      "zh": "Guanabana"
+      "zh": "刺果番荔枝"
     },
     "guarana": {
       "en": "Guarana",
-      "zh": "Guarana"
+      "zh": "瓜拉那"
     },
     "guavaberry": {
       "en": "Guavaberry",
-      "zh": "Guavaberry"
+      "zh": "番石榴莓"
     },
     "hackberry": {
       "en": "Hackberry",
-      "zh": "Hackberry"
+      "zh": "朴树果"
     },
     "hard_kiwi": {
       "en": "Hard Kiwi",
-      "zh": "Hard Kiwi"
+      "zh": "硬毛猕猴桃"
     },
     "hawthorn": {
       "en": "Hawthorn",
@@ -787,71 +787,71 @@
     },
     "hog_plum": {
       "en": "Hog Plum",
-      "zh": "Hog Plum"
+      "zh": "猪李"
     },
     "honeyberry": {
       "en": "Honeyberry",
-      "zh": "Honeyberry"
+      "zh": "蜜莓"
     },
     "honeysuckle": {
       "en": "Honeysuckle",
-      "zh": "Honeysuckle"
+      "zh": "金银花"
     },
     "horned_melon": {
       "en": "Horned Melon",
-      "zh": "Horned Melon"
+      "zh": "刺角瓜"
     },
     "illawarra_plum": {
       "en": "Illawarra Plum",
-      "zh": "Illawarra Plum"
+      "zh": "伊拉瓦拉李"
     },
     "indian_almond": {
       "en": "Indian Almond",
-      "zh": "Indian Almond"
+      "zh": "印度杏仁"
     },
     "indian_strawberry": {
       "en": "Indian Strawberry",
-      "zh": "Indian Strawberry"
+      "zh": "印度草莓"
     },
     "ita_palm": {
       "en": "Ita Palm",
-      "zh": "Ita Palm"
+      "zh": "伊塔棕榈"
     },
     "jaboticaba": {
       "en": "Jaboticaba",
-      "zh": "Jaboticaba"
+      "zh": "嘉宝果"
     },
     "jalapeno": {
       "en": "Jalapeno",
-      "zh": "Jalapeno"
+      "zh": "墨西哥辣椒"
     },
     "jamaica_cherry": {
       "en": "Jamaica Cherry",
-      "zh": "Jamaica Cherry"
+      "zh": "牙买加樱桃"
     },
     "jambul": {
       "en": "Jambul",
-      "zh": "Jambul"
+      "zh": "乌榄"
     },
     "japanese_raisin": {
       "en": "Japanese Raisin",
-      "zh": "Japanese Raisin"
+      "zh": "日本葡萄干树"
     },
     "jasmine": {
       "en": "Jasmine",
-      "zh": "Jasmine"
+      "zh": "茉莉"
     },
     "jatoba": {
       "en": "Jatoba",
-      "zh": "Jatoba"
+      "zh": "贾托巴"
     },
     "jocote": {
       "en": "Jocote",
-      "zh": "Jocote"
+      "zh": "乔科特李"
     },
     "jostaberry": {
       "en": "Jostaberry",
-      "zh": "Jostaberry"
+      "zh": "乔斯塔莓"
     },
     "jujube": {
       "en": "Jujube",
@@ -859,23 +859,23 @@
     },
     "juniper_berry": {
       "en": "Juniper Berry",
-      "zh": "Juniper Berry"
+      "zh": "杜松子"
     },
     "kaffir_lime": {
       "en": "Kaffir Lime",
-      "zh": "Kaffir Lime"
+      "zh": "青柠"
     },
     "kahikatea": {
       "en": "Kahikatea",
-      "zh": "Kahikatea"
+      "zh": "卡希卡泰亚"
     },
     "kakadu_plum": {
       "en": "Kakadu Plum",
-      "zh": "Kakadu Plum"
+      "zh": "卡卡杜李"
     },
     "keppel": {
       "en": "Keppel",
-      "zh": "Keppel"
+      "zh": "凯普尔苹果"
     },
     "kiwi": {
       "en": "Kiwi",
@@ -883,39 +883,39 @@
     },
     "kumquat": {
       "en": "Kumquat",
-      "zh": "Kumquat"
+      "zh": "金桔"
     },
     "kundong": {
       "en": "Kundong",
-      "zh": "Kundong"
+      "zh": "昆东"
     },
     "kutjera": {
       "en": "Kutjera",
-      "zh": "Kutjera"
+      "zh": "沙漠番茄"
     },
     "lablab": {
       "en": "Lablab",
-      "zh": "Lablab"
+      "zh": "扁豆"
     },
     "langsat": {
       "en": "Langsat",
-      "zh": "Langsat"
+      "zh": "兰撒"
     },
     "lapsi": {
       "en": "Lapsi",
-      "zh": "Lapsi"
+      "zh": "兰西果"
     },
     "lemon_aspen": {
       "en": "Lemon Aspen",
-      "zh": "Lemon Aspen"
+      "zh": "柠檬阿斯彭"
     },
     "leucaena": {
       "en": "Leucaena",
-      "zh": "Leucaena"
+      "zh": "银合欢"
     },
     "lillipilli": {
       "en": "Lillipilli",
-      "zh": "Lillipilli"
+      "zh": "丁香蒲桃"
     },
     "lime": {
       "en": "Lime",
@@ -923,11 +923,11 @@
     },
     "lingonberry": {
       "en": "Lingonberry",
-      "zh": "Lingonberry"
+      "zh": "越橘"
     },
     "loganberry": {
       "en": "Loganberry",
-      "zh": "Loganberry"
+      "zh": "罗甘莓"
     },
     "longan": {
       "en": "Longan",
@@ -939,11 +939,11 @@
     },
     "lucuma": {
       "en": "Lucuma",
-      "zh": "Lucuma"
+      "zh": "蛋黄果"
     },
     "lulo": {
       "en": "Lulo",
-      "zh": "Lulo"
+      "zh": "卢洛果"
     },
     "lychee": {
       "en": "Lychee",
@@ -951,31 +951,31 @@
     },
     "mabolo": {
       "en": "Mabolo",
-      "zh": "Mabolo"
+      "zh": "马波洛柿"
     },
     "macadamia": {
       "en": "Macadamia",
-      "zh": "Macadamia"
+      "zh": "夏威夷果"
     },
     "malay_apple": {
       "en": "Malay Apple",
-      "zh": "Malay Apple"
+      "zh": "马来苹果"
     },
     "mamey": {
       "en": "Mamey",
-      "zh": "Mamey"
+      "zh": "马梅果"
     },
     "mamey_apple": {
       "en": "Mamey Apple",
-      "zh": "Mamey Apple"
+      "zh": "马梅苹果"
     },
     "mandarin": {
       "en": "Mandarin",
-      "zh": "Mandarin"
+      "zh": "柑橘"
     },
     "mandarine": {
       "en": "Mandarine",
-      "zh": "Mandarine"
+      "zh": "柑橘"
     },
     "mangosteen": {
       "en": "Mangosteen",
@@ -983,27 +983,27 @@
     },
     "manila_tamarind": {
       "en": "Manila Tamarind",
-      "zh": "Manila Tamarind"
+      "zh": "马尼拉罗望子"
     },
     "marang": {
       "en": "Marang",
-      "zh": "Marang"
+      "zh": "马拉昂波罗蜜"
     },
     "mayhaw": {
       "en": "Mayhaw",
-      "zh": "Mayhaw"
+      "zh": "五月山楂"
     },
     "maypop": {
       "en": "Maypop",
-      "zh": "Maypop"
+      "zh": "西番莲"
     },
     "medlar": {
       "en": "Medlar",
-      "zh": "Medlar"
+      "zh": "欧楂"
     },
     "melinjo": {
       "en": "Melinjo",
-      "zh": "Melinjo"
+      "zh": "银杏果"
     },
     "melon": {
       "en": "Melon",
@@ -1011,99 +1011,99 @@
     },
     "melon_pear": {
       "en": "Melon Pear",
-      "zh": "Melon Pear"
+      "zh": "香梨瓜"
     },
     "midyim": {
       "en": "Midyim",
-      "zh": "Midyim"
+      "zh": "米丁莓"
     },
     "miracle_fruit": {
       "en": "Miracle Fruit",
-      "zh": "Miracle Fruit"
+      "zh": "奇迹果"
     },
     "mock_strawberry": {
       "en": "Mock Strawberry",
-      "zh": "Mock Strawberry"
+      "zh": "蛇莓"
     },
     "monkfruit": {
       "en": "Monkfruit",
-      "zh": "Monkfruit"
+      "zh": "罗汉果"
     },
     "monstera_deliciosa": {
       "en": "Monstera Deliciosa",
-      "zh": "Monstera Deliciosa"
+      "zh": "龟背竹果"
     },
     "morinda": {
       "en": "Morinda",
-      "zh": "Morinda"
+      "zh": "巴戟天果"
     },
     "mountain_papaya": {
       "en": "Mountain Papaya",
-      "zh": "Mountain Papaya"
+      "zh": "山木瓜"
     },
     "mountain_soursop": {
       "en": "Mountain Soursop",
-      "zh": "Mountain Soursop"
+      "zh": "山刺果番荔枝"
     },
     "mundu": {
       "en": "Mundu",
-      "zh": "Mundu"
+      "zh": "文杜果"
     },
     "myrtle": {
       "en": "Myrtle",
-      "zh": "Myrtle"
+      "zh": "桃金娘"
     },
     "nance": {
       "en": "Nance",
-      "zh": "Nance"
+      "zh": "南斯果"
     },
     "nannyberry": {
       "en": "Nannyberry",
-      "zh": "Nannyberry"
+      "zh": "保姆莓"
     },
     "naranjilla": {
       "en": "Naranjilla",
-      "zh": "Naranjilla"
+      "zh": "娜兰吉拉"
     },
     "native_cherry": {
       "en": "Native Cherry",
-      "zh": "Native Cherry"
+      "zh": "原生樱桃"
     },
     "native_gooseberry": {
       "en": "Native Gooseberry",
-      "zh": "Native Gooseberry"
+      "zh": "原生醋栗"
     },
     "nectarine": {
       "en": "Nectarine",
-      "zh": "Nectarine"
+      "zh": "油桃"
     },
     "neem": {
       "en": "Neem",
-      "zh": "Neem"
+      "zh": "印楝"
     },
     "nungu": {
       "en": "Nungu",
-      "zh": "Nungu"
+      "zh": "冰苹果"
     },
     "nutmeg": {
       "en": "Nutmeg",
-      "zh": "Nutmeg"
+      "zh": "肉豆蔻"
     },
     "oil_palm": {
       "en": "Oil Palm",
-      "zh": "Oil Palm"
+      "zh": "油棕"
     },
     "old_world_sycomore": {
       "en": "Old World Sycomore",
-      "zh": "Old World Sycomore"
+      "zh": "无花果树"
     },
     "oregon_grape": {
       "en": "Oregon Grape",
-      "zh": "Oregon Grape"
+      "zh": "俄勒冈葡萄"
     },
     "otaheite_apple": {
       "en": "Otaheite Apple",
-      "zh": "Otaheite Apple"
+      "zh": "大溪地苹果"
     },
     "passionfruit": {
       "en": "Passionfruit",
@@ -1111,11 +1111,11 @@
     },
     "pawpaw": {
       "en": "Pawpaw",
-      "zh": "Pawpaw"
+      "zh": "泡泡树果"
     },
     "pea": {
       "en": "Pea",
-      "zh": "Pea"
+      "zh": "豌豆"
     },
     "peach": {
       "en": "Peach",
@@ -1123,11 +1123,11 @@
     },
     "pepino": {
       "en": "Pepino",
-      "zh": "Pepino"
+      "zh": "香瓜茄"
     },
     "pequi": {
       "en": "Pequi",
-      "zh": "Pequi"
+      "zh": "佩基果"
     },
     "persimmon": {
       "en": "Persimmon",
@@ -1135,15 +1135,15 @@
     },
     "pigeon_plum": {
       "en": "Pigeon Plum",
-      "zh": "Pigeon Plum"
+      "zh": "鸽李"
     },
     "pigface": {
       "en": "Pigface",
-      "zh": "Pigface"
+      "zh": "海马齿"
     },
     "pili_nut": {
       "en": "Pili Nut",
-      "zh": "Pili Nut"
+      "zh": "霹雳果"
     },
     "pineapple": {
       "en": "Pineapple",
@@ -1151,11 +1151,11 @@
     },
     "pineberry": {
       "en": "Pineberry",
-      "zh": "Pineberry"
+      "zh": "菠萝莓"
     },
     "pitomba": {
       "en": "Pitomba",
-      "zh": "Pitomba"
+      "zh": "皮通巴"
     },
     "plum": {
       "en": "Plum",
@@ -1163,11 +1163,11 @@
     },
     "plumcot": {
       "en": "Plumcot",
-      "zh": "Plumcot"
+      "zh": "杏李"
     },
     "podocarpu": {
       "en": "Podocarpu",
-      "zh": "Podocarpu"
+      "zh": "罗汉松"
     },
     "pomelo": {
       "en": "Pomelo",
@@ -1175,31 +1175,31 @@
     },
     "prikly_pear": {
       "en": "Prikly Pear",
-      "zh": "Prikly Pear"
+      "zh": "仙人掌果"
     },
     "pulasan": {
       "en": "Pulasan",
-      "zh": "Pulasan"
+      "zh": "葡萄桑"
     },
     "pumpkin": {
       "en": "Pumpkin",
-      "zh": "Pumpkin"
+      "zh": "南瓜"
     },
     "pupunha": {
       "en": "Pupunha",
-      "zh": "Pupunha"
+      "zh": "桃棕榈果"
     },
     "purple_apple_berry": {
       "en": "Purple Apple Berry",
-      "zh": "Purple Apple Berry"
+      "zh": "紫苹果莓"
     },
     "quandong": {
       "en": "Quandong",
-      "zh": "Quandong"
+      "zh": "全东果"
     },
     "quince": {
       "en": "Quince",
-      "zh": "Quince"
+      "zh": "榅桲"
     },
     "rambutan": {
       "en": "Rambutan",
@@ -1207,7 +1207,7 @@
     },
     "rangpur": {
       "en": "Rangpur",
-      "zh": "Rangpur"
+      "zh": "朗普尔柑橘"
     },
     "raspberry": {
       "en": "Raspberry",
@@ -1215,87 +1215,87 @@
     },
     "red_mulberry": {
       "en": "Red Mulberry",
-      "zh": "Red Mulberry"
+      "zh": "红桑"
     },
     "redcurrant": {
       "en": "Redcurrant",
-      "zh": "Redcurrant"
+      "zh": "红醋栗"
     },
     "riberry": {
       "en": "Riberry",
-      "zh": "Riberry"
+      "zh": "里莓"
     },
     "ridged_gourd": {
       "en": "Ridged Gourd",
-      "zh": "Ridged Gourd"
+      "zh": "棱角丝瓜"
     },
     "rimu": {
       "en": "Rimu",
-      "zh": "Rimu"
+      "zh": "芮木"
     },
     "rose_apple": {
       "en": "Rose Apple",
-      "zh": "Rose Apple"
+      "zh": "莲雾"
     },
     "rose_hip": {
       "en": "Rose Hip",
-      "zh": "Rose Hip"
+      "zh": "玫瑰果"
     },
     "rose_leaf_bramble": {
       "en": "Rose Leaf Bramble",
-      "zh": "Rose Leaf Bramble"
+      "zh": "蔷薇莓"
     },
     "rose_myrtle": {
       "en": "Rose Myrtle",
-      "zh": "Rose Myrtle"
+      "zh": "桃金娘"
     },
     "saguaro": {
       "en": "Saguaro",
-      "zh": "Saguaro"
+      "zh": "巨人柱仙人掌果"
     },
     "salak": {
       "en": "Salak",
-      "zh": "Salak"
+      "zh": "蛇皮果"
     },
     "salal": {
       "en": "Salal",
-      "zh": "Salal"
+      "zh": "沙拉拉莓"
     },
     "salmonberry": {
       "en": "Salmonberry",
-      "zh": "Salmonberry"
+      "zh": "鲑鱼莓"
     },
     "sandpaper_fig": {
       "en": "Sandpaper Fig",
-      "zh": "Sandpaper Fig"
+      "zh": "砂纸无花果"
     },
     "santol": {
       "en": "Santol",
-      "zh": "Santol"
+      "zh": "山陀儿"
     },
     "sapodilla": {
       "en": "Sapodilla",
-      "zh": "Sapodilla"
+      "zh": "人心果"
     },
     "saskatoon": {
       "en": "Saskatoon",
-      "zh": "Saskatoon"
+      "zh": "萨斯卡通莓"
     },
     "sea_buckthorn": {
       "en": "Sea Buckthorn",
-      "zh": "Sea Buckthorn"
+      "zh": "沙棘"
     },
     "sea_grape": {
       "en": "Sea Grape",
-      "zh": "Sea Grape"
+      "zh": "海葡萄"
     },
     "snowberry": {
       "en": "Snowberry",
-      "zh": "Snowberry"
+      "zh": "雪莓"
     },
     "soncoya": {
       "en": "Soncoya",
-      "zh": "Soncoya"
+      "zh": "松科亚果"
     },
     "soursop": {
       "en": "Soursop",
@@ -1307,23 +1307,23 @@
     },
     "strawberry_guava": {
       "en": "Strawberry Guava",
-      "zh": "Strawberry Guava"
+      "zh": "草莓番石榴"
     },
     "sugar_apple": {
       "en": "Sugar Apple",
-      "zh": "Sugar Apple"
+      "zh": "糖苹果"
     },
     "surinam_cherry": {
       "en": "Surinam Cherry",
-      "zh": "Surinam Cherry"
+      "zh": "苏里南樱桃"
     },
     "sycamore_fig": {
       "en": "Sycamore Fig",
-      "zh": "Sycamore Fig"
+      "zh": "聚果榕"
     },
     "tamarillo": {
       "en": "Tamarillo",
-      "zh": "Tamarillo"
+      "zh": "树番茄"
     },
     "tamarind": {
       "en": "Tamarind",
@@ -1331,43 +1331,43 @@
     },
     "tangelo": {
       "en": "Tangelo",
-      "zh": "Tangelo"
+      "zh": "橘柚"
     },
     "tanjong": {
       "en": "Tanjong",
-      "zh": "Tanjong"
+      "zh": "丹戎果"
     },
     "taxus_baccata": {
       "en": "Taxus Baccata",
-      "zh": "Taxus Baccata"
+      "zh": "红豆杉"
     },
     "tayberry": {
       "en": "Tayberry",
-      "zh": "Tayberry"
+      "zh": "泰莓"
     },
     "texas_persimmon": {
       "en": "Texas Persimmon",
-      "zh": "Texas Persimmon"
+      "zh": "德州柿子"
     },
     "thimbleberry": {
       "en": "Thimbleberry",
-      "zh": "Thimbleberry"
+      "zh": "顶针莓"
     },
     "toyon": {
       "en": "Toyon",
-      "zh": "Toyon"
+      "zh": "圣诞浆果"
     },
     "ugli_fruit": {
       "en": "Ugli Fruit",
-      "zh": "Ugli Fruit"
+      "zh": "丑橘"
     },
     "vanilla": {
       "en": "Vanilla",
-      "zh": "Vanilla"
+      "zh": "香草"
     },
     "velvet_tamarind": {
       "en": "Velvet Tamarind",
-      "zh": "Velvet Tamarind"
+      "zh": "天鹅绒罗望子"
     },
     "watermelon": {
       "en": "Watermelon",
@@ -1379,11 +1379,11 @@
     },
     "white_aspen": {
       "en": "White Aspen",
-      "zh": "White Aspen"
+      "zh": "白杨"
     },
     "white_currant": {
       "en": "White Currant",
-      "zh": "White Currant"
+      "zh": "白醋栗"
     },
     "white_mulberry": {
       "en": "White Mulberry",
@@ -1391,15 +1391,15 @@
     },
     "white_sapote": {
       "en": "White Sapote",
-      "zh": "White Sapote"
+      "zh": "白柿"
     },
     "wineberry": {
       "en": "Wineberry",
-      "zh": "Wineberry"
+      "zh": "酒莓"
     },
     "wongi": {
       "en": "Wongi",
-      "zh": "Wongi"
+      "zh": "翁吉果"
     },
     "yali_pear": {
       "en": "Yali Pear",
@@ -1407,15 +1407,15 @@
     },
     "yellow_plum": {
       "en": "Yellow Plum",
-      "zh": "Yellow Plum"
+      "zh": "黄李"
     },
     "yuzu": {
       "en": "Yuzu",
-      "zh": "Yuzu"
+      "zh": "柚子"
     },
     "zigzag_vine": {
       "en": "Zigzag Vine",
-      "zh": "Zigzag Vine"
+      "zh": "之字藤果"
     },
     "zucchini": {
       "en": "Zucchini",
