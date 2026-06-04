@@ -22,6 +22,7 @@ except ImportError:
     timm = None
 
 from afsa_write_predictions import OUT, append_row, ensure_parent
+from afsa_species_display import canonical_species, species_display, state_display
 
 
 class DualHeadClassifier(nn.Module):
@@ -65,7 +66,7 @@ def infer_feat_dim(backbone: nn.Module, img_size: int = 224) -> int:
     return int(out.shape[-1])
 
 
-def load_model(export_dir: Path, meta: dict, device: torch.device) -> tuple[nn.Module, list[str]]:
+def load_model(export_dir: Path, meta: dict, device: torch.device) -> tuple[nn.Module, list[str], list[str] | None]:
     ckpt_path = export_dir / "best.pt"
     classes_path = export_dir / "classes.json"
     cls_meta = json.loads(classes_path.read_text(encoding="utf-8"))
@@ -82,7 +83,7 @@ def load_model(export_dir: Path, meta: dict, device: torch.device) -> tuple[nn.M
         model = DualHeadClassifier(backbone, feat_dim, len(species), len(states) or 1)
         model.load_state_dict(state, strict=True)
         model.to(device).eval()
-        return model, species
+        return model, species, states
 
     classes = cls_meta.get("classes") or cls_meta.get("species_classes") or []
     model_type = cls_meta.get("model_type", export_dir.name)
@@ -109,10 +110,12 @@ def load_model(export_dir: Path, meta: dict, device: torch.device) -> tuple[nn.M
         raise RuntimeError(f"dual-head checkpoint in single-head loader: {export_dir}")
     model.load_state_dict(state, strict=False)
     model.to(device).eval()
-    return model, classes
+    return model, classes, None
 
 
-def predict_one(model: nn.Module, img: Image.Image, classes: list[str], device: torch.device) -> tuple[str, float]:
+def predict_one(
+    model: nn.Module, img: Image.Image, classes: list[str], device: torch.device, states: list[str] | None = None
+) -> dict:
     tf = transforms.Compose(
         [
             transforms.Resize(256),
@@ -125,12 +128,36 @@ def predict_one(model: nn.Module, img: Image.Image, classes: list[str], device: 
     with torch.no_grad():
         out = model(x)
         if isinstance(out, tuple):
-            logits = out[0]
-        else:
-            logits = out
+            sp_logits, st_logits = out
+            sp_prob = torch.softmax(sp_logits, dim=1)[0]
+            sp_conf, sp_idx = sp_prob.max(0)
+            species_raw = classes[int(sp_idx)]
+            row = {
+                "predicted_class": species_raw,
+                "confidence": float(sp_conf.item()),
+                **species_display(species_raw),
+            }
+            if states:
+                st_prob = torch.softmax(st_logits, dim=1)[0]
+                st_conf, st_idx = st_prob.max(0)
+                state_raw = states[int(st_idx)]
+                row.update(
+                    {
+                        "predicted_state": state_raw,
+                        "predicted_state_confidence": float(st_conf.item()),
+                        **state_display(state_raw),
+                    }
+                )
+            return row
+        logits = out
         prob = torch.softmax(logits, dim=1)[0]
         conf, idx = prob.max(0)
-    return classes[int(idx)], float(conf.item())
+        species_raw = classes[int(idx)]
+        return {
+            "predicted_class": species_raw,
+            "confidence": float(conf.item()),
+            **species_display(species_raw),
+        }
 
 
 def load_routes(images_file: Path) -> list[dict]:
@@ -171,7 +198,7 @@ def main() -> None:
             print(f"[skip] missing {pt}")
             continue
         try:
-            model, classes = load_model(export_dir, {}, device)
+            model, classes, state_classes = load_model(export_dir, {}, device)
         except Exception as exc:
             print(f"[skip] load failed {github_model_id}: {exc}")
             continue
@@ -182,15 +209,14 @@ def main() -> None:
                 print(f"[warn] missing image {img_path}")
                 continue
             img = Image.open(img_path).convert("RGB")
-            pred_class, conf = predict_one(model, img, classes, device)
+            pred = predict_one(model, img, classes, device, state_classes)
             append_row(
                 {
                     "image": route["image_path"],
                     "github_path": route["image_path"],
                     "afsa_detection_id": route.get("afsa_detection_id"),
                     "github_model_id": github_model_id,
-                    "predicted_class": pred_class,
-                    "confidence": conf,
+                    **pred,
                 }
             )
         print(f"[ok] {github_model_id} routes={len(routes)}")

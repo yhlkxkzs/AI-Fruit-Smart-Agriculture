@@ -57,8 +57,15 @@ App 上传策略：**每张照片只 push 1 次**到本仓；sidecar 中 `github
 | `github_path` | 强烈建议 | 与 `image` 相同 |
 | `afsa_detection_id` | 强烈建议 | 与 sidecar 相同 |
 | **`github_model_id`** | **是（单仓）** | 与下表及 App `lib/config/github_fruit_classification_targets.dart` 一致 |
-| `predicted_class` | 是 | 模型输出类别（英文，与 `classes.json` 一致） |
+| `predicted_class` | 是 | 模型原始类别 id（与 `classes.json` 的 `species_classes` 一致，供 App 匹配） |
+| `predicted_species_key` | 强烈建议 | 归一化后的物种 key（经 `species_aliases` 映射，如 `carambola`→`starfruit`） |
+| `predicted_class_en` | 强烈建议 | 展示用英文名（如 `Starfruit`） |
+| `predicted_class_zh` | 强烈建议 | 展示用中文名（如 `杨桃`） |
+| `predicted_state` | multistate 可选 | 状态 key（`healthy` / `mature` 等） |
+| `predicted_state_en` / `predicted_state_zh` | multistate 可选 | 状态中英文名 |
 | `confidence` | 是 | 0～1 浮点数（若写 92 表示 92%，App 会归一化） |
+
+映射表：`.github/scripts/species_display_map.json`（由 `scripts/build_species_display_map.py` 从 `species_mapping.json` 生成）。
 
 ### App 匹配顺序
 

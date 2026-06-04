@@ -1,0 +1,1457 @@
+{
+  "version": 1,
+  "description": "Map model species_classes / aliases to display names (en + zh)",
+  "species_aliases": {
+    "apple": "apple",
+    "cherry": "cherry",
+    "grape": "grape",
+    "lemon": "lemon",
+    "mango": "mango",
+    "orange": "orange",
+    "pear": "pear",
+    "pistachio": "pistachio",
+    "strawberry": "strawberry",
+    "tomato": "tomato",
+    "banana": "banana",
+    "coconut": "coconut",
+    "guava": "guava",
+    "papaya": "papaya",
+    "pomegranate": "pomegranate",
+    "litchi": "litchi",
+    "avocado": "avocado",
+    "bean": "bean",
+    "broccoli": "broccoli",
+    "chestnut": "chestnut",
+    "cucumber": "cucumber",
+    "eggplant": "eggplant",
+    "hogplum": "hogplum",
+    "jackfruit": "jackfruit",
+    "soybean": "soybean",
+    "abiu": "abiu",
+    "acai": "acai",
+    "acerola": "acerola",
+    "achachairu": "achachairu",
+    "ackee": "ackee",
+    "african_plum": "african_plum",
+    "alligator_apple": "alligator_apple",
+    "ambarella": "ambarella",
+    "apricot": "apricot",
+    "araza": "araza",
+    "bael": "bael",
+    "barbadine": "barbadine",
+    "barberry": "barberry",
+    "bayberry": "bayberry",
+    "beach_plum": "beach_plum",
+    "bearberry": "bearberry",
+    "bignay": "bignay",
+    "bilimbi": "bilimbi",
+    "bitter_melon": "bitter_melon",
+    "black_cherry": "black_cherry",
+    "black_currant": "black_currant",
+    "black_mullberry": "black_mullberry",
+    "black_sapote": "black_sapote",
+    "blackberry": "blackberry",
+    "blueberry": "blueberry",
+    "bolwarra": "bolwarra",
+    "brazil_nut": "brazil_nut",
+    "bread_fruit": "bread_fruit",
+    "buddhas_hand": "buddhas_hand",
+    "buffaloberry": "buffaloberry",
+    "burdekin_plum": "burdekin_plum",
+    "burmese_grape": "burmese_grape",
+    "caimito": "caimito",
+    "camu_camu": "camu_camu",
+    "canistel": "canistel",
+    "cape_gooseberry": "cape_gooseberry",
+    "carambola": "starfruit",
+    "cardon": "cardon",
+    "cedar_bay_cherry": "cedar_bay_cherry",
+    "cempedak": "cempedak",
+    "ceylon_gooseberry": "ceylon_gooseberry",
+    "che": "che",
+    "chenet": "chenet",
+    "cherimoya": "cherimoya",
+    "chico": "chico",
+    "chokeberry": "chokeberry",
+    "clementine": "clementine",
+    "cloudberry": "cloudberry",
+    "cluster_fig": "cluster_fig",
+    "cocoa_bean": "cocoa_bean",
+    "coffee": "coffee",
+    "common_buckthorn": "common_buckthorn",
+    "corn_kernel": "corn_kernel",
+    "cornelian_cherry": "cornelian_cherry",
+    "crab_apple": "crab_apple",
+    "cranberry": "cranberry",
+    "crowberry": "crowberry",
+    "cupuacu": "cupuacu",
+    "custard_apple": "custard_apple",
+    "damson": "damson",
+    "date": "date",
+    "desert_fig": "desert_fig",
+    "desert_lime": "desert_lime",
+    "dewberry": "dewberry",
+    "dragonfruit": "dragonfruit",
+    "durian": "durian",
+    "elderberry": "elderberry",
+    "elephant_apple": "elephant_apple",
+    "emblic": "emblic",
+    "entawak": "entawak",
+    "etrog": "etrog",
+    "feijoa": "feijoa",
+    "fibrous_satinash": "fibrous_satinash",
+    "fig": "fig",
+    "finger_lime": "finger_lime",
+    "galia_melon": "galia_melon",
+    "gandaria": "gandaria",
+    "genipap": "genipap",
+    "goji": "goji",
+    "gooseberry": "gooseberry",
+    "goumi": "goumi",
+    "grapefruit": "grapefruit",
+    "greengage": "greengage",
+    "grenadilla": "grenadilla",
+    "guanabana": "guanabana",
+    "guarana": "guarana",
+    "guavaberry": "guavaberry",
+    "hackberry": "hackberry",
+    "hard_kiwi": "hard_kiwi",
+    "hawthorn": "hawthorn",
+    "hog_plum": "hog_plum",
+    "honeyberry": "honeyberry",
+    "honeysuckle": "honeysuckle",
+    "horned_melon": "horned_melon",
+    "illawarra_plum": "illawarra_plum",
+    "indian_almond": "indian_almond",
+    "indian_strawberry": "indian_strawberry",
+    "ita_palm": "ita_palm",
+    "jaboticaba": "jaboticaba",
+    "jalapeno": "jalapeno",
+    "jamaica_cherry": "jamaica_cherry",
+    "jambul": "jambul",
+    "japanese_raisin": "japanese_raisin",
+    "jasmine": "jasmine",
+    "jatoba": "jatoba",
+    "jocote": "jocote",
+    "jostaberry": "jostaberry",
+    "jujube": "jujube",
+    "juniper_berry": "juniper_berry",
+    "kaffir_lime": "kaffir_lime",
+    "kahikatea": "kahikatea",
+    "kakadu_plum": "kakadu_plum",
+    "keppel": "keppel",
+    "kiwi": "kiwi",
+    "kumquat": "kumquat",
+    "kundong": "kundong",
+    "kutjera": "kutjera",
+    "lablab": "lablab",
+    "langsat": "langsat",
+    "lapsi": "lapsi",
+    "lemon_aspen": "lemon_aspen",
+    "leucaena": "leucaena",
+    "lillipilli": "lillipilli",
+    "lime": "lime",
+    "lingonberry": "lingonberry",
+    "loganberry": "loganberry",
+    "longan": "longan",
+    "loquat": "loquat",
+    "lucuma": "lucuma",
+    "lulo": "lulo",
+    "lychee": "litchi",
+    "mabolo": "mabolo",
+    "macadamia": "macadamia",
+    "malay_apple": "malay_apple",
+    "mamey": "mamey",
+    "mamey_apple": "mamey_apple",
+    "mandarin": "mandarin",
+    "mandarine": "mandarine",
+    "mangosteen": "mangosteen",
+    "manila_tamarind": "manila_tamarind",
+    "marang": "marang",
+    "mayhaw": "mayhaw",
+    "maypop": "maypop",
+    "medlar": "medlar",
+    "melinjo": "melinjo",
+    "melon": "melon",
+    "melon_pear": "melon_pear",
+    "midyim": "midyim",
+    "miracle_fruit": "miracle_fruit",
+    "mock_strawberry": "mock_strawberry",
+    "monkfruit": "monkfruit",
+    "monstera_deliciosa": "monstera_deliciosa",
+    "morinda": "morinda",
+    "mountain_papaya": "mountain_papaya",
+    "mountain_soursop": "mountain_soursop",
+    "mundu": "mundu",
+    "myrtle": "myrtle",
+    "nance": "nance",
+    "nannyberry": "nannyberry",
+    "naranjilla": "naranjilla",
+    "native_cherry": "native_cherry",
+    "native_gooseberry": "native_gooseberry",
+    "nectarine": "nectarine",
+    "neem": "neem",
+    "nungu": "nungu",
+    "nutmeg": "nutmeg",
+    "oil_palm": "oil_palm",
+    "old_world_sycomore": "old_world_sycomore",
+    "oregon_grape": "oregon_grape",
+    "otaheite_apple": "otaheite_apple",
+    "passionfruit": "passionfruit",
+    "pawpaw": "pawpaw",
+    "pea": "pea",
+    "peach": "peach",
+    "pepino": "pepino",
+    "pequi": "pequi",
+    "persimmon": "persimmon",
+    "pigeon_plum": "pigeon_plum",
+    "pigface": "pigface",
+    "pili_nut": "pili_nut",
+    "pineapple": "pineapple",
+    "pineberry": "pineberry",
+    "pitomba": "pitomba",
+    "plum": "plum",
+    "plumcot": "plumcot",
+    "podocarpu": "podocarpu",
+    "pomelo": "pomelo",
+    "prikly_pear": "prikly_pear",
+    "pulasan": "pulasan",
+    "pumpkin": "pumpkin",
+    "pupunha": "pupunha",
+    "purple_apple_berry": "purple_apple_berry",
+    "quandong": "quandong",
+    "quince": "quince",
+    "rambutan": "rambutan",
+    "rangpur": "rangpur",
+    "raspberry": "raspberry",
+    "red_mulberry": "red_mulberry",
+    "redcurrant": "redcurrant",
+    "riberry": "riberry",
+    "ridged_gourd": "ridged_gourd",
+    "rimu": "rimu",
+    "rose_apple": "rose_apple",
+    "rose_hip": "rose_hip",
+    "rose_leaf_bramble": "rose_leaf_bramble",
+    "rose_myrtle": "rose_myrtle",
+    "saguaro": "saguaro",
+    "salak": "salak",
+    "salal": "salal",
+    "salmonberry": "salmonberry",
+    "sandpaper_fig": "sandpaper_fig",
+    "santol": "santol",
+    "sapodilla": "sapodilla",
+    "saskatoon": "saskatoon",
+    "sea_buckthorn": "sea_buckthorn",
+    "sea_grape": "sea_grape",
+    "snowberry": "snowberry",
+    "soncoya": "soncoya",
+    "soursop": "soursop",
+    "starfruit": "starfruit",
+    "strawberry_guava": "strawberry_guava",
+    "sugar_apple": "sugar_apple",
+    "surinam_cherry": "surinam_cherry",
+    "sycamore_fig": "sycamore_fig",
+    "tamarillo": "tamarillo",
+    "tamarind": "tamarind",
+    "tangelo": "tangelo",
+    "tanjong": "tanjong",
+    "taxus_baccata": "taxus_baccata",
+    "tayberry": "tayberry",
+    "texas_persimmon": "texas_persimmon",
+    "thimbleberry": "thimbleberry",
+    "toyon": "toyon",
+    "ugli_fruit": "ugli_fruit",
+    "vanilla": "vanilla",
+    "velvet_tamarind": "velvet_tamarind",
+    "watermelon": "watermelon",
+    "wax_gourd": "wax_gourd",
+    "white_aspen": "white_aspen",
+    "white_currant": "white_currant",
+    "white_mulberry": "white_mulberry",
+    "white_sapote": "white_sapote",
+    "wineberry": "wineberry",
+    "wongi": "wongi",
+    "yali_pear": "yali_pear",
+    "yellow_plum": "yellow_plum",
+    "yuzu": "yuzu",
+    "zigzag_vine": "zigzag_vine",
+    "zucchini": "zucchini",
+    "lichi": "litchi",
+    "longan2": "longan",
+    "kelapa": "coconut",
+    "hami_melon": "melon",
+    "hamimelon": "melon",
+    "muskmelon": "melon",
+    "cantaloupe": "melon",
+    "rockmelon": "melon",
+    "bitter_gourd": "bitter_melon",
+    "biiter": "bitter_melon",
+    "black_berry": "blackberry",
+    "dragon_fruit": "dragonfruit",
+    "passion_fruit": "passionfruit",
+    "african_plums": "african_plum",
+    "wax_apple": "rose_apple",
+    "belimbing": "starfruit",
+    "fresh_guava": "guava",
+    "rotten_guava": "guava",
+    "fresh_mango": "mango",
+    "rotten_mango": "mango",
+    "fresh_rotten_guava": "guava",
+    "mangoes": "mango",
+    "guavas": "guava",
+    "figs": "fig",
+    "finger_limes": "finger_lime",
+    "jujubes": "jujube",
+    "pomelos": "pomelo",
+    "peaches": "peach",
+    "raspberries": "raspberry",
+    "soursops": "soursop",
+    "durians": "durian",
+    "jackfruits": "jackfruit",
+    "avocados": "avocado",
+    "blueberries": "blueberry",
+    "blackberries": "blackberry",
+    "cranberries": "cranberry",
+    "watermelons": "watermelon",
+    "pineapples": "pineapple",
+    "pomegranates": "pomegranate",
+    "papayas": "papaya",
+    "coconuts": "coconut",
+    "bananas": "banana",
+    "hogpulm": "hogplum",
+    "starfruits": "starfruit",
+    "other": "other"
+  },
+  "species": {
+    "apple": {
+      "en": "Apple",
+      "zh": "苹果"
+    },
+    "cherry": {
+      "en": "Cherry",
+      "zh": "樱桃"
+    },
+    "grape": {
+      "en": "Grape",
+      "zh": "葡萄"
+    },
+    "lemon": {
+      "en": "Lemon",
+      "zh": "柠檬"
+    },
+    "mango": {
+      "en": "Mango",
+      "zh": "芒果"
+    },
+    "orange": {
+      "en": "Orange",
+      "zh": "橙"
+    },
+    "pear": {
+      "en": "Pear",
+      "zh": "梨"
+    },
+    "pistachio": {
+      "en": "Pistachio",
+      "zh": "开心果"
+    },
+    "strawberry": {
+      "en": "Strawberry",
+      "zh": "草莓"
+    },
+    "tomato": {
+      "en": "Tomato",
+      "zh": "番茄"
+    },
+    "banana": {
+      "en": "Banana",
+      "zh": "香蕉"
+    },
+    "coconut": {
+      "en": "Coconut",
+      "zh": "椰子"
+    },
+    "guava": {
+      "en": "Guava",
+      "zh": "番石榴"
+    },
+    "papaya": {
+      "en": "Papaya",
+      "zh": "木瓜"
+    },
+    "pomegranate": {
+      "en": "Pomegranate",
+      "zh": "石榴"
+    },
+    "litchi": {
+      "en": "Litchi",
+      "zh": "荔枝"
+    },
+    "avocado": {
+      "en": "Avocado",
+      "zh": "牛油果"
+    },
+    "bean": {
+      "en": "Bean",
+      "zh": "豆"
+    },
+    "broccoli": {
+      "en": "Broccoli",
+      "zh": "西兰花"
+    },
+    "chestnut": {
+      "en": "Chestnut",
+      "zh": "栗子"
+    },
+    "cucumber": {
+      "en": "Cucumber",
+      "zh": "黄瓜"
+    },
+    "eggplant": {
+      "en": "Eggplant",
+      "zh": "茄子"
+    },
+    "hogplum": {
+      "en": "Hogplum",
+      "zh": "李榄"
+    },
+    "jackfruit": {
+      "en": "Jackfruit",
+      "zh": "菠萝蜜"
+    },
+    "soybean": {
+      "en": "Soybean",
+      "zh": "大豆"
+    },
+    "abiu": {
+      "en": "Abiu",
+      "zh": "Abiu"
+    },
+    "acai": {
+      "en": "Acai",
+      "zh": "Acai"
+    },
+    "acerola": {
+      "en": "Acerola",
+      "zh": "针叶樱桃"
+    },
+    "achachairu": {
+      "en": "Achachairu",
+      "zh": "Achachairu"
+    },
+    "ackee": {
+      "en": "Ackee",
+      "zh": "Ackee"
+    },
+    "african_plum": {
+      "en": "African Plum",
+      "zh": "非洲李"
+    },
+    "alligator_apple": {
+      "en": "Alligator Apple",
+      "zh": "Alligator Apple"
+    },
+    "ambarella": {
+      "en": "Ambarella",
+      "zh": "Ambarella"
+    },
+    "apricot": {
+      "en": "Apricot",
+      "zh": "杏"
+    },
+    "araza": {
+      "en": "Araza",
+      "zh": "Araza"
+    },
+    "bael": {
+      "en": "Bael",
+      "zh": "Bael"
+    },
+    "barbadine": {
+      "en": "Barbadine",
+      "zh": "Barbadine"
+    },
+    "barberry": {
+      "en": "Barberry",
+      "zh": "Barberry"
+    },
+    "bayberry": {
+      "en": "Bayberry",
+      "zh": "Bayberry"
+    },
+    "beach_plum": {
+      "en": "Beach Plum",
+      "zh": "Beach Plum"
+    },
+    "bearberry": {
+      "en": "Bearberry",
+      "zh": "Bearberry"
+    },
+    "bignay": {
+      "en": "Bignay",
+      "zh": "Bignay"
+    },
+    "bilimbi": {
+      "en": "Bilimbi",
+      "zh": "Bilimbi"
+    },
+    "bitter_melon": {
+      "en": "Bitter Melon",
+      "zh": "苦瓜"
+    },
+    "black_cherry": {
+      "en": "Black Cherry",
+      "zh": "Black Cherry"
+    },
+    "black_currant": {
+      "en": "Black Currant",
+      "zh": "黑醋栗"
+    },
+    "black_mullberry": {
+      "en": "Black Mullberry",
+      "zh": "Black Mullberry"
+    },
+    "black_sapote": {
+      "en": "Black Sapote",
+      "zh": "Black Sapote"
+    },
+    "blackberry": {
+      "en": "Blackberry",
+      "zh": "黑莓"
+    },
+    "blueberry": {
+      "en": "Blueberry",
+      "zh": "蓝莓"
+    },
+    "bolwarra": {
+      "en": "Bolwarra",
+      "zh": "Bolwarra"
+    },
+    "brazil_nut": {
+      "en": "Brazil Nut",
+      "zh": "Brazil Nut"
+    },
+    "bread_fruit": {
+      "en": "Bread Fruit",
+      "zh": "Bread Fruit"
+    },
+    "buddhas_hand": {
+      "en": "Buddhas Hand",
+      "zh": "Buddhas Hand"
+    },
+    "buffaloberry": {
+      "en": "Buffaloberry",
+      "zh": "Buffaloberry"
+    },
+    "burdekin_plum": {
+      "en": "Burdekin Plum",
+      "zh": "Burdekin Plum"
+    },
+    "burmese_grape": {
+      "en": "Burmese Grape",
+      "zh": "Burmese Grape"
+    },
+    "caimito": {
+      "en": "Caimito",
+      "zh": "Caimito"
+    },
+    "camu_camu": {
+      "en": "Camu Camu",
+      "zh": "卡姆果"
+    },
+    "canistel": {
+      "en": "Canistel",
+      "zh": "Canistel"
+    },
+    "cape_gooseberry": {
+      "en": "Cape Gooseberry",
+      "zh": "Cape Gooseberry"
+    },
+    "carambola": {
+      "en": "Carambola",
+      "zh": "Carambola"
+    },
+    "cardon": {
+      "en": "Cardon",
+      "zh": "Cardon"
+    },
+    "cedar_bay_cherry": {
+      "en": "Cedar Bay Cherry",
+      "zh": "Cedar Bay Cherry"
+    },
+    "cempedak": {
+      "en": "Cempedak",
+      "zh": "Cempedak"
+    },
+    "ceylon_gooseberry": {
+      "en": "Ceylon Gooseberry",
+      "zh": "Ceylon Gooseberry"
+    },
+    "che": {
+      "en": "Che",
+      "zh": "Che"
+    },
+    "chenet": {
+      "en": "Chenet",
+      "zh": "Chenet"
+    },
+    "cherimoya": {
+      "en": "Cherimoya",
+      "zh": "番荔枝"
+    },
+    "chico": {
+      "en": "Chico",
+      "zh": "Chico"
+    },
+    "chokeberry": {
+      "en": "Chokeberry",
+      "zh": "Chokeberry"
+    },
+    "clementine": {
+      "en": "Clementine",
+      "zh": "Clementine"
+    },
+    "cloudberry": {
+      "en": "Cloudberry",
+      "zh": "Cloudberry"
+    },
+    "cluster_fig": {
+      "en": "Cluster Fig",
+      "zh": "Cluster Fig"
+    },
+    "cocoa_bean": {
+      "en": "Cocoa Bean",
+      "zh": "可可"
+    },
+    "coffee": {
+      "en": "Coffee",
+      "zh": "咖啡"
+    },
+    "common_buckthorn": {
+      "en": "Common Buckthorn",
+      "zh": "Common Buckthorn"
+    },
+    "corn_kernel": {
+      "en": "Corn Kernel",
+      "zh": "玉米"
+    },
+    "cornelian_cherry": {
+      "en": "Cornelian Cherry",
+      "zh": "Cornelian Cherry"
+    },
+    "crab_apple": {
+      "en": "Crab Apple",
+      "zh": "Crab Apple"
+    },
+    "cranberry": {
+      "en": "Cranberry",
+      "zh": "蔓越莓"
+    },
+    "crowberry": {
+      "en": "Crowberry",
+      "zh": "Crowberry"
+    },
+    "cupuacu": {
+      "en": "Cupuacu",
+      "zh": "Cupuacu"
+    },
+    "custard_apple": {
+      "en": "Custard Apple",
+      "zh": "番荔枝"
+    },
+    "damson": {
+      "en": "Damson",
+      "zh": "Damson"
+    },
+    "date": {
+      "en": "Date",
+      "zh": "椰枣"
+    },
+    "desert_fig": {
+      "en": "Desert Fig",
+      "zh": "Desert Fig"
+    },
+    "desert_lime": {
+      "en": "Desert Lime",
+      "zh": "Desert Lime"
+    },
+    "dewberry": {
+      "en": "Dewberry",
+      "zh": "Dewberry"
+    },
+    "dragonfruit": {
+      "en": "Dragonfruit",
+      "zh": "火龙果"
+    },
+    "durian": {
+      "en": "Durian",
+      "zh": "榴莲"
+    },
+    "elderberry": {
+      "en": "Elderberry",
+      "zh": "Elderberry"
+    },
+    "elephant_apple": {
+      "en": "Elephant Apple",
+      "zh": "Elephant Apple"
+    },
+    "emblic": {
+      "en": "Emblic",
+      "zh": "Emblic"
+    },
+    "entawak": {
+      "en": "Entawak",
+      "zh": "Entawak"
+    },
+    "etrog": {
+      "en": "Etrog",
+      "zh": "Etrog"
+    },
+    "feijoa": {
+      "en": "Feijoa",
+      "zh": "费约果"
+    },
+    "fibrous_satinash": {
+      "en": "Fibrous Satinash",
+      "zh": "Fibrous Satinash"
+    },
+    "fig": {
+      "en": "Fig",
+      "zh": "无花果"
+    },
+    "finger_lime": {
+      "en": "Finger Lime",
+      "zh": "Finger Lime"
+    },
+    "galia_melon": {
+      "en": "Galia Melon",
+      "zh": "Galia Melon"
+    },
+    "gandaria": {
+      "en": "Gandaria",
+      "zh": "Gandaria"
+    },
+    "genipap": {
+      "en": "Genipap",
+      "zh": "Genipap"
+    },
+    "goji": {
+      "en": "Goji",
+      "zh": "Goji"
+    },
+    "gooseberry": {
+      "en": "Gooseberry",
+      "zh": "醋栗"
+    },
+    "goumi": {
+      "en": "Goumi",
+      "zh": "Goumi"
+    },
+    "grapefruit": {
+      "en": "Grapefruit",
+      "zh": "葡萄柚"
+    },
+    "greengage": {
+      "en": "Greengage",
+      "zh": "Greengage"
+    },
+    "grenadilla": {
+      "en": "Grenadilla",
+      "zh": "Grenadilla"
+    },
+    "guanabana": {
+      "en": "Guanabana",
+      "zh": "Guanabana"
+    },
+    "guarana": {
+      "en": "Guarana",
+      "zh": "Guarana"
+    },
+    "guavaberry": {
+      "en": "Guavaberry",
+      "zh": "Guavaberry"
+    },
+    "hackberry": {
+      "en": "Hackberry",
+      "zh": "Hackberry"
+    },
+    "hard_kiwi": {
+      "en": "Hard Kiwi",
+      "zh": "Hard Kiwi"
+    },
+    "hawthorn": {
+      "en": "Hawthorn",
+      "zh": "山楂"
+    },
+    "hog_plum": {
+      "en": "Hog Plum",
+      "zh": "Hog Plum"
+    },
+    "honeyberry": {
+      "en": "Honeyberry",
+      "zh": "Honeyberry"
+    },
+    "honeysuckle": {
+      "en": "Honeysuckle",
+      "zh": "Honeysuckle"
+    },
+    "horned_melon": {
+      "en": "Horned Melon",
+      "zh": "Horned Melon"
+    },
+    "illawarra_plum": {
+      "en": "Illawarra Plum",
+      "zh": "Illawarra Plum"
+    },
+    "indian_almond": {
+      "en": "Indian Almond",
+      "zh": "Indian Almond"
+    },
+    "indian_strawberry": {
+      "en": "Indian Strawberry",
+      "zh": "Indian Strawberry"
+    },
+    "ita_palm": {
+      "en": "Ita Palm",
+      "zh": "Ita Palm"
+    },
+    "jaboticaba": {
+      "en": "Jaboticaba",
+      "zh": "Jaboticaba"
+    },
+    "jalapeno": {
+      "en": "Jalapeno",
+      "zh": "Jalapeno"
+    },
+    "jamaica_cherry": {
+      "en": "Jamaica Cherry",
+      "zh": "Jamaica Cherry"
+    },
+    "jambul": {
+      "en": "Jambul",
+      "zh": "Jambul"
+    },
+    "japanese_raisin": {
+      "en": "Japanese Raisin",
+      "zh": "Japanese Raisin"
+    },
+    "jasmine": {
+      "en": "Jasmine",
+      "zh": "Jasmine"
+    },
+    "jatoba": {
+      "en": "Jatoba",
+      "zh": "Jatoba"
+    },
+    "jocote": {
+      "en": "Jocote",
+      "zh": "Jocote"
+    },
+    "jostaberry": {
+      "en": "Jostaberry",
+      "zh": "Jostaberry"
+    },
+    "jujube": {
+      "en": "Jujube",
+      "zh": "枣"
+    },
+    "juniper_berry": {
+      "en": "Juniper Berry",
+      "zh": "Juniper Berry"
+    },
+    "kaffir_lime": {
+      "en": "Kaffir Lime",
+      "zh": "Kaffir Lime"
+    },
+    "kahikatea": {
+      "en": "Kahikatea",
+      "zh": "Kahikatea"
+    },
+    "kakadu_plum": {
+      "en": "Kakadu Plum",
+      "zh": "Kakadu Plum"
+    },
+    "keppel": {
+      "en": "Keppel",
+      "zh": "Keppel"
+    },
+    "kiwi": {
+      "en": "Kiwi",
+      "zh": "猕猴桃"
+    },
+    "kumquat": {
+      "en": "Kumquat",
+      "zh": "Kumquat"
+    },
+    "kundong": {
+      "en": "Kundong",
+      "zh": "Kundong"
+    },
+    "kutjera": {
+      "en": "Kutjera",
+      "zh": "Kutjera"
+    },
+    "lablab": {
+      "en": "Lablab",
+      "zh": "Lablab"
+    },
+    "langsat": {
+      "en": "Langsat",
+      "zh": "Langsat"
+    },
+    "lapsi": {
+      "en": "Lapsi",
+      "zh": "Lapsi"
+    },
+    "lemon_aspen": {
+      "en": "Lemon Aspen",
+      "zh": "Lemon Aspen"
+    },
+    "leucaena": {
+      "en": "Leucaena",
+      "zh": "Leucaena"
+    },
+    "lillipilli": {
+      "en": "Lillipilli",
+      "zh": "Lillipilli"
+    },
+    "lime": {
+      "en": "Lime",
+      "zh": "青柠"
+    },
+    "lingonberry": {
+      "en": "Lingonberry",
+      "zh": "Lingonberry"
+    },
+    "loganberry": {
+      "en": "Loganberry",
+      "zh": "Loganberry"
+    },
+    "longan": {
+      "en": "Longan",
+      "zh": "龙眼"
+    },
+    "loquat": {
+      "en": "Loquat",
+      "zh": "枇杷"
+    },
+    "lucuma": {
+      "en": "Lucuma",
+      "zh": "Lucuma"
+    },
+    "lulo": {
+      "en": "Lulo",
+      "zh": "Lulo"
+    },
+    "lychee": {
+      "en": "Lychee",
+      "zh": "荔枝"
+    },
+    "mabolo": {
+      "en": "Mabolo",
+      "zh": "Mabolo"
+    },
+    "macadamia": {
+      "en": "Macadamia",
+      "zh": "Macadamia"
+    },
+    "malay_apple": {
+      "en": "Malay Apple",
+      "zh": "Malay Apple"
+    },
+    "mamey": {
+      "en": "Mamey",
+      "zh": "Mamey"
+    },
+    "mamey_apple": {
+      "en": "Mamey Apple",
+      "zh": "Mamey Apple"
+    },
+    "mandarin": {
+      "en": "Mandarin",
+      "zh": "Mandarin"
+    },
+    "mandarine": {
+      "en": "Mandarine",
+      "zh": "Mandarine"
+    },
+    "mangosteen": {
+      "en": "Mangosteen",
+      "zh": "山竹"
+    },
+    "manila_tamarind": {
+      "en": "Manila Tamarind",
+      "zh": "Manila Tamarind"
+    },
+    "marang": {
+      "en": "Marang",
+      "zh": "Marang"
+    },
+    "mayhaw": {
+      "en": "Mayhaw",
+      "zh": "Mayhaw"
+    },
+    "maypop": {
+      "en": "Maypop",
+      "zh": "Maypop"
+    },
+    "medlar": {
+      "en": "Medlar",
+      "zh": "Medlar"
+    },
+    "melinjo": {
+      "en": "Melinjo",
+      "zh": "Melinjo"
+    },
+    "melon": {
+      "en": "Melon",
+      "zh": "甜瓜"
+    },
+    "melon_pear": {
+      "en": "Melon Pear",
+      "zh": "Melon Pear"
+    },
+    "midyim": {
+      "en": "Midyim",
+      "zh": "Midyim"
+    },
+    "miracle_fruit": {
+      "en": "Miracle Fruit",
+      "zh": "Miracle Fruit"
+    },
+    "mock_strawberry": {
+      "en": "Mock Strawberry",
+      "zh": "Mock Strawberry"
+    },
+    "monkfruit": {
+      "en": "Monkfruit",
+      "zh": "Monkfruit"
+    },
+    "monstera_deliciosa": {
+      "en": "Monstera Deliciosa",
+      "zh": "Monstera Deliciosa"
+    },
+    "morinda": {
+      "en": "Morinda",
+      "zh": "Morinda"
+    },
+    "mountain_papaya": {
+      "en": "Mountain Papaya",
+      "zh": "Mountain Papaya"
+    },
+    "mountain_soursop": {
+      "en": "Mountain Soursop",
+      "zh": "Mountain Soursop"
+    },
+    "mundu": {
+      "en": "Mundu",
+      "zh": "Mundu"
+    },
+    "myrtle": {
+      "en": "Myrtle",
+      "zh": "Myrtle"
+    },
+    "nance": {
+      "en": "Nance",
+      "zh": "Nance"
+    },
+    "nannyberry": {
+      "en": "Nannyberry",
+      "zh": "Nannyberry"
+    },
+    "naranjilla": {
+      "en": "Naranjilla",
+      "zh": "Naranjilla"
+    },
+    "native_cherry": {
+      "en": "Native Cherry",
+      "zh": "Native Cherry"
+    },
+    "native_gooseberry": {
+      "en": "Native Gooseberry",
+      "zh": "Native Gooseberry"
+    },
+    "nectarine": {
+      "en": "Nectarine",
+      "zh": "Nectarine"
+    },
+    "neem": {
+      "en": "Neem",
+      "zh": "Neem"
+    },
+    "nungu": {
+      "en": "Nungu",
+      "zh": "Nungu"
+    },
+    "nutmeg": {
+      "en": "Nutmeg",
+      "zh": "Nutmeg"
+    },
+    "oil_palm": {
+      "en": "Oil Palm",
+      "zh": "Oil Palm"
+    },
+    "old_world_sycomore": {
+      "en": "Old World Sycomore",
+      "zh": "Old World Sycomore"
+    },
+    "oregon_grape": {
+      "en": "Oregon Grape",
+      "zh": "Oregon Grape"
+    },
+    "otaheite_apple": {
+      "en": "Otaheite Apple",
+      "zh": "Otaheite Apple"
+    },
+    "passionfruit": {
+      "en": "Passionfruit",
+      "zh": "百香果"
+    },
+    "pawpaw": {
+      "en": "Pawpaw",
+      "zh": "Pawpaw"
+    },
+    "pea": {
+      "en": "Pea",
+      "zh": "Pea"
+    },
+    "peach": {
+      "en": "Peach",
+      "zh": "桃"
+    },
+    "pepino": {
+      "en": "Pepino",
+      "zh": "Pepino"
+    },
+    "pequi": {
+      "en": "Pequi",
+      "zh": "Pequi"
+    },
+    "persimmon": {
+      "en": "Persimmon",
+      "zh": "柿子"
+    },
+    "pigeon_plum": {
+      "en": "Pigeon Plum",
+      "zh": "Pigeon Plum"
+    },
+    "pigface": {
+      "en": "Pigface",
+      "zh": "Pigface"
+    },
+    "pili_nut": {
+      "en": "Pili Nut",
+      "zh": "Pili Nut"
+    },
+    "pineapple": {
+      "en": "Pineapple",
+      "zh": "菠萝"
+    },
+    "pineberry": {
+      "en": "Pineberry",
+      "zh": "Pineberry"
+    },
+    "pitomba": {
+      "en": "Pitomba",
+      "zh": "Pitomba"
+    },
+    "plum": {
+      "en": "Plum",
+      "zh": "李子"
+    },
+    "plumcot": {
+      "en": "Plumcot",
+      "zh": "Plumcot"
+    },
+    "podocarpu": {
+      "en": "Podocarpu",
+      "zh": "Podocarpu"
+    },
+    "pomelo": {
+      "en": "Pomelo",
+      "zh": "柚子"
+    },
+    "prikly_pear": {
+      "en": "Prikly Pear",
+      "zh": "Prikly Pear"
+    },
+    "pulasan": {
+      "en": "Pulasan",
+      "zh": "Pulasan"
+    },
+    "pumpkin": {
+      "en": "Pumpkin",
+      "zh": "Pumpkin"
+    },
+    "pupunha": {
+      "en": "Pupunha",
+      "zh": "Pupunha"
+    },
+    "purple_apple_berry": {
+      "en": "Purple Apple Berry",
+      "zh": "Purple Apple Berry"
+    },
+    "quandong": {
+      "en": "Quandong",
+      "zh": "Quandong"
+    },
+    "quince": {
+      "en": "Quince",
+      "zh": "Quince"
+    },
+    "rambutan": {
+      "en": "Rambutan",
+      "zh": "红毛丹"
+    },
+    "rangpur": {
+      "en": "Rangpur",
+      "zh": "Rangpur"
+    },
+    "raspberry": {
+      "en": "Raspberry",
+      "zh": "树莓"
+    },
+    "red_mulberry": {
+      "en": "Red Mulberry",
+      "zh": "Red Mulberry"
+    },
+    "redcurrant": {
+      "en": "Redcurrant",
+      "zh": "Redcurrant"
+    },
+    "riberry": {
+      "en": "Riberry",
+      "zh": "Riberry"
+    },
+    "ridged_gourd": {
+      "en": "Ridged Gourd",
+      "zh": "Ridged Gourd"
+    },
+    "rimu": {
+      "en": "Rimu",
+      "zh": "Rimu"
+    },
+    "rose_apple": {
+      "en": "Rose Apple",
+      "zh": "Rose Apple"
+    },
+    "rose_hip": {
+      "en": "Rose Hip",
+      "zh": "Rose Hip"
+    },
+    "rose_leaf_bramble": {
+      "en": "Rose Leaf Bramble",
+      "zh": "Rose Leaf Bramble"
+    },
+    "rose_myrtle": {
+      "en": "Rose Myrtle",
+      "zh": "Rose Myrtle"
+    },
+    "saguaro": {
+      "en": "Saguaro",
+      "zh": "Saguaro"
+    },
+    "salak": {
+      "en": "Salak",
+      "zh": "Salak"
+    },
+    "salal": {
+      "en": "Salal",
+      "zh": "Salal"
+    },
+    "salmonberry": {
+      "en": "Salmonberry",
+      "zh": "Salmonberry"
+    },
+    "sandpaper_fig": {
+      "en": "Sandpaper Fig",
+      "zh": "Sandpaper Fig"
+    },
+    "santol": {
+      "en": "Santol",
+      "zh": "Santol"
+    },
+    "sapodilla": {
+      "en": "Sapodilla",
+      "zh": "Sapodilla"
+    },
+    "saskatoon": {
+      "en": "Saskatoon",
+      "zh": "Saskatoon"
+    },
+    "sea_buckthorn": {
+      "en": "Sea Buckthorn",
+      "zh": "Sea Buckthorn"
+    },
+    "sea_grape": {
+      "en": "Sea Grape",
+      "zh": "Sea Grape"
+    },
+    "snowberry": {
+      "en": "Snowberry",
+      "zh": "Snowberry"
+    },
+    "soncoya": {
+      "en": "Soncoya",
+      "zh": "Soncoya"
+    },
+    "soursop": {
+      "en": "Soursop",
+      "zh": "刺果番荔枝"
+    },
+    "starfruit": {
+      "en": "Starfruit",
+      "zh": "杨桃"
+    },
+    "strawberry_guava": {
+      "en": "Strawberry Guava",
+      "zh": "Strawberry Guava"
+    },
+    "sugar_apple": {
+      "en": "Sugar Apple",
+      "zh": "Sugar Apple"
+    },
+    "surinam_cherry": {
+      "en": "Surinam Cherry",
+      "zh": "Surinam Cherry"
+    },
+    "sycamore_fig": {
+      "en": "Sycamore Fig",
+      "zh": "Sycamore Fig"
+    },
+    "tamarillo": {
+      "en": "Tamarillo",
+      "zh": "Tamarillo"
+    },
+    "tamarind": {
+      "en": "Tamarind",
+      "zh": "罗望子"
+    },
+    "tangelo": {
+      "en": "Tangelo",
+      "zh": "Tangelo"
+    },
+    "tanjong": {
+      "en": "Tanjong",
+      "zh": "Tanjong"
+    },
+    "taxus_baccata": {
+      "en": "Taxus Baccata",
+      "zh": "Taxus Baccata"
+    },
+    "tayberry": {
+      "en": "Tayberry",
+      "zh": "Tayberry"
+    },
+    "texas_persimmon": {
+      "en": "Texas Persimmon",
+      "zh": "Texas Persimmon"
+    },
+    "thimbleberry": {
+      "en": "Thimbleberry",
+      "zh": "Thimbleberry"
+    },
+    "toyon": {
+      "en": "Toyon",
+      "zh": "Toyon"
+    },
+    "ugli_fruit": {
+      "en": "Ugli Fruit",
+      "zh": "Ugli Fruit"
+    },
+    "vanilla": {
+      "en": "Vanilla",
+      "zh": "Vanilla"
+    },
+    "velvet_tamarind": {
+      "en": "Velvet Tamarind",
+      "zh": "Velvet Tamarind"
+    },
+    "watermelon": {
+      "en": "Watermelon",
+      "zh": "西瓜"
+    },
+    "wax_gourd": {
+      "en": "Wax Gourd",
+      "zh": "冬瓜"
+    },
+    "white_aspen": {
+      "en": "White Aspen",
+      "zh": "White Aspen"
+    },
+    "white_currant": {
+      "en": "White Currant",
+      "zh": "White Currant"
+    },
+    "white_mulberry": {
+      "en": "White Mulberry",
+      "zh": "桑椹"
+    },
+    "white_sapote": {
+      "en": "White Sapote",
+      "zh": "White Sapote"
+    },
+    "wineberry": {
+      "en": "Wineberry",
+      "zh": "Wineberry"
+    },
+    "wongi": {
+      "en": "Wongi",
+      "zh": "Wongi"
+    },
+    "yali_pear": {
+      "en": "Yali Pear",
+      "zh": "鸭梨"
+    },
+    "yellow_plum": {
+      "en": "Yellow Plum",
+      "zh": "Yellow Plum"
+    },
+    "yuzu": {
+      "en": "Yuzu",
+      "zh": "Yuzu"
+    },
+    "zigzag_vine": {
+      "en": "Zigzag Vine",
+      "zh": "Zigzag Vine"
+    },
+    "zucchini": {
+      "en": "Zucchini",
+      "zh": "西葫芦"
+    },
+    "other": {
+      "en": "Other",
+      "zh": "其他"
+    }
+  },
+  "states": {
+    "healthy": {
+      "en": "Healthy",
+      "zh": "健康"
+    },
+    "immature": {
+      "en": "Immature",
+      "zh": "未成熟"
+    },
+    "mature": {
+      "en": "Mature",
+      "zh": "成熟"
+    },
+    "aged": {
+      "en": "Aged",
+      "zh": "过熟/衰老"
+    },
+    "diseased": {
+      "en": "Diseased",
+      "zh": "病害"
+    },
+    "pest": {
+      "en": "Pest",
+      "zh": "虫害"
+    },
+    "unknown": {
+      "en": "Unknown",
+      "zh": "未知"
+    }
+  }
+}
