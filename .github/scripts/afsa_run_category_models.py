@@ -113,6 +113,17 @@ def load_model(export_dir: Path, meta: dict, device: torch.device) -> tuple[nn.M
     return model, classes, None
 
 
+def app_prediction_fields(species_raw: str, confidence: float) -> dict:
+    """App 展示读 predicted_class；匹配/调试用 raw_class + predicted_species_key。"""
+    disp = species_display(species_raw)
+    return {
+        "raw_class": species_raw,
+        "predicted_class": disp["predicted_class_zh"],
+        "confidence": confidence,
+        **disp,
+    }
+
+
 def predict_one(
     model: nn.Module, img: Image.Image, classes: list[str], device: torch.device, states: list[str] | None = None
 ) -> dict:
@@ -132,11 +143,7 @@ def predict_one(
             sp_prob = torch.softmax(sp_logits, dim=1)[0]
             sp_conf, sp_idx = sp_prob.max(0)
             species_raw = classes[int(sp_idx)]
-            row = {
-                "predicted_class": species_raw,
-                "confidence": float(sp_conf.item()),
-                **species_display(species_raw),
-            }
+            row = app_prediction_fields(species_raw, float(sp_conf.item()))
             if states:
                 st_prob = torch.softmax(st_logits, dim=1)[0]
                 st_conf, st_idx = st_prob.max(0)
@@ -153,11 +160,7 @@ def predict_one(
         prob = torch.softmax(logits, dim=1)[0]
         conf, idx = prob.max(0)
         species_raw = classes[int(idx)]
-        return {
-            "predicted_class": species_raw,
-            "confidence": float(conf.item()),
-            **species_display(species_raw),
-        }
+        return app_prediction_fields(species_raw, float(conf.item()))
 
 
 def load_routes(images_file: Path) -> list[dict]:
