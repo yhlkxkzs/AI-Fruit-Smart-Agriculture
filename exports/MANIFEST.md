@@ -20,8 +20,8 @@
 | `shufflenet_v2` | `shufflenet_v2/` | 是 |
 | `efficientnet_lite4` | `efficientnet_lite4/` | 是 |
 | `mobilevit_s` | `mobilevit_s/` | 是 |
-| `efficientnetv2_s` | `efficientnetv2_s/` | **否**（约 78 MB，见 README；训练进行中） |
-| `convnext_tiny` | `convnext_tiny/` | **否**（约 107 MB，>100 MB 硬限；训练进行中） |
+| `efficientnetv2_s` | `efficientnetv2_s/` | **是**（约 80 MB，已 push） |
+| `convnext_tiny` | `convnext_tiny/` | **否**（约 108 MB，>100 MB 硬限） |
 | `regnety_400mf` | `regnety_400mf/` | 是 |
 | `resnet18` | `resnet18/` | 是 |
 | `vit_tiny` | `vit_tiny/` | 是 |
@@ -33,7 +33,7 @@
 1. 完成 8 个 backbone 的 **275 类 multistate** 导出并推送权重。
 2. 新增 **GitHub Actions** 与 `incoming/` 目录结构。
 3. 重命名主槽位目录；旧 `deploy_*` / `*_multistate` 已移除或归档。
-4. **`convnext_tiny` / `efficientnetv2_s`**：`classes.json` + README 推送；`best.pt` 仅本地（体积或训练未完成）。
+4. **`convnext_tiny`**：`classes.json` + README 推送；`best.pt` 仅本地（>100 MB）。**`efficientnetv2_s`** 权重已推送。
 
 ## 训练后写入
 
@@ -58,7 +58,7 @@ cd tasks/fruit_classification && git add -A && git commit && git push
 根目录 `.gitignore` 排除：
 
 - `exports/convnext_tiny/best.pt`（>100 MB）
-- `exports/efficientnetv2_s/best.pt`（>50 MB 建议限）
+- ~~`exports/efficientnetv2_s/best.pt`~~（约 80 MB，已纳入 Git）
 - `runs/` 全部训练产物
 
 Workflow 在缺少 `best.pt` 时会 **skip** 对应模型；`classes.json` 仍可用于元数据。
