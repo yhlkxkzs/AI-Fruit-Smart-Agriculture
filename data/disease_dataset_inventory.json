@@ -1,0 +1,873 @@
+[
+  {
+    "root": "database",
+    "name": "plant_village",
+    "path": "/home/yuhanlin/Database/datasets/database/plant_village",
+    "images": 171238,
+    "n_classes": 38,
+    "host": "plant_village",
+    "tier": "A",
+    "top_classes": [
+      [
+        "Orange___Haunglongbing_(Citrus_greening)",
+        11014
+      ],
+      [
+        "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+        10714
+      ],
+      [
+        "Soybean___healthy",
+        10180
+      ],
+      [
+        "Peach___Bacterial_spot",
+        4594
+      ],
+      [
+        "Tomato___Bacterial_spot",
+        4254
+      ],
+      [
+        "Tomato___Late_blight",
+        3818
+      ]
+    ],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "paddy_disease_classification",
+    "path": "/home/yuhanlin/Database/datasets/database/paddy_disease_classification",
+    "images": 24283,
+    "n_classes": 6,
+    "host": "rice",
+    "tier": "A",
+    "top_classes": [
+      [
+        "normal",
+        1764
+      ],
+      [
+        "brown_spot",
+        965
+      ],
+      [
+        "downy_mildew",
+        620
+      ],
+      [
+        "bacterial_leaf_blight",
+        479
+      ],
+      [
+        "bacterial_leaf_streak",
+        380
+      ],
+      [
+        "bacterial_panicle_blight",
+        337
+      ]
+    ],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "tomato_leaf_disease",
+    "path": "/home/yuhanlin/Database/datasets/database/tomato_leaf_disease",
+    "images": 21168,
+    "n_classes": 10,
+    "host": "tomato",
+    "tier": "A",
+    "top_classes": [
+      [
+        "Tomato___Leaf_Mold",
+        1100
+      ],
+      [
+        "Tomato___Bacterial_spot",
+        1100
+      ],
+      [
+        "Tomato___Septoria_leaf_spot",
+        1100
+      ],
+      [
+        "Tomato___Early_blight",
+        1100
+      ],
+      [
+        "Tomato___Late_blight",
+        1100
+      ],
+      [
+        "Tomato___Spider_mites Two-spotted_spider_mite",
+        1084
+      ]
+    ],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "cucumber_disease_classification",
+    "path": "/home/yuhanlin/Database/datasets/database/cucumber_disease_classification",
+    "images": 14258,
+    "n_classes": 8,
+    "host": "cucumber",
+    "tier": "A",
+    "top_classes": [
+      [
+        "Pythium Fruit Rot",
+        969
+      ],
+      [
+        "Downy Mildew",
+        960
+      ],
+      [
+        "Bacterial Wilt",
+        960
+      ],
+      [
+        "Belly Rot",
+        960
+      ],
+      [
+        "Fresh Leaf",
+        960
+      ],
+      [
+        "Fresh Cucumber",
+        960
+      ]
+    ],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "tea_leaf_disease_classification",
+    "path": "/home/yuhanlin/Database/datasets/database/tea_leaf_disease_classification",
+    "images": 11734,
+    "n_classes": 5,
+    "host": "tea",
+    "tier": "A",
+    "top_classes": [
+      [
+        "algal_spot",
+        1000
+      ],
+      [
+        "healthy",
+        1000
+      ],
+      [
+        "red_spot",
+        1000
+      ],
+      [
+        "gray_blight",
+        1000
+      ],
+      [
+        "brown_blight",
+        867
+      ]
+    ],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "orange_leaf_disease_classification",
+    "path": "/home/yuhanlin/Database/datasets/database/orange_leaf_disease_classification",
+    "images": 11462,
+    "n_classes": 3,
+    "host": "orange/citrus",
+    "tier": "A",
+    "top_classes": [
+      [
+        "Powdery mildew",
+        598
+      ],
+      [
+        "Citrus canker",
+        588
+      ],
+      [
+        "Healthy leaf",
+        547
+      ]
+    ],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "corn_maize_leaf_disease",
+    "path": "/home/yuhanlin/Database/datasets/database/corn_maize_leaf_disease",
+    "images": 8376,
+    "n_classes": 4,
+    "host": "corn",
+    "tier": "A",
+    "top_classes": [
+      [
+        "Common_Rust",
+        1306
+      ],
+      [
+        "Healthy",
+        1162
+      ],
+      [
+        "Blight",
+        1146
+      ],
+      [
+        "Gray_Leaf_Spot",
+        574
+      ]
+    ],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "rice_leaf_disease_classification",
+    "path": "/home/yuhanlin/Database/datasets/database/rice_leaf_disease_classification",
+    "images": 7658,
+    "n_classes": 5,
+    "host": "rice",
+    "tier": "A",
+    "top_classes": [
+      [
+        "Healthy Rice Leaf",
+        653
+      ],
+      [
+        "Brown Spot",
+        646
+      ],
+      [
+        "Bacterial Leaf Blight",
+        636
+      ],
+      [
+        "Sheath Blight",
+        632
+      ],
+      [
+        "Leaf scald",
+        628
+      ]
+    ],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "java_plum_leaf_disease_classification",
+    "path": "/home/yuhanlin/Database/datasets/database/java_plum_leaf_disease_classification",
+    "images": 7200,
+    "n_classes": 5,
+    "host": "plum",
+    "tier": "A",
+    "top_classes": [
+      [
+        "Healthy",
+        800
+      ],
+      [
+        "Bacterial_Spot",
+        800
+      ],
+      [
+        "Brown_Blight",
+        800
+      ],
+      [
+        "Sooty_Mold",
+        800
+      ],
+      [
+        "Powdery_Mildew",
+        800
+      ]
+    ],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "Soybean",
+    "path": "/home/yuhanlin/Database/datasets/database/Soybean",
+    "images": 5684,
+    "n_classes": 4,
+    "host": "bean",
+    "tier": "A",
+    "top_classes": [
+      [
+        "rust",
+        1000
+      ],
+      [
+        "Soyabean Semilooper_Pest_Attack",
+        790
+      ],
+      [
+        "Soyabean_Mosaic",
+        772
+      ],
+      [
+        "Healthy_Soyabean",
+        280
+      ]
+    ],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "FruitVision A Benchmark Dataset for Fresh, Rotten, and Formalin-mixed Fruit Detection",
+    "path": "/home/yuhanlin/Database/datasets/database/FruitVision A Benchmark Dataset for Fresh, Rotten, and Formalin-mixed Fruit Detection",
+    "images": 177438,
+    "n_classes": 2,
+    "host": "—",
+    "tier": "B",
+    "top_classes": [
+      [
+        "Fresh",
+        34200
+      ],
+      [
+        "Rotten",
+        23939
+      ]
+    ],
+    "organ": "fruit (rot/state)"
+  },
+  {
+    "root": "database",
+    "name": "arabica_coffee_leaf_disease_classification",
+    "path": "/home/yuhanlin/Database/datasets/database/arabica_coffee_leaf_disease_classification",
+    "images": 71924,
+    "n_classes": 1,
+    "host": "coffee",
+    "tier": "B",
+    "top_classes": [
+      [
+        "Healthy",
+        18984
+      ]
+    ],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "cassava",
+    "path": "/home/yuhanlin/Database/datasets/database/cassava",
+    "images": 28121,
+    "n_classes": 1,
+    "host": "cassava",
+    "tier": "B",
+    "top_classes": [
+      [
+        "healthy",
+        374
+      ]
+    ],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "papaya_leaf_disease_classification",
+    "path": "/home/yuhanlin/Database/datasets/database/papaya_leaf_disease_classification",
+    "images": 4318,
+    "n_classes": 5,
+    "host": "papaya",
+    "tier": "B",
+    "top_classes": [
+      [
+        "Curl",
+        585
+      ],
+      [
+        "RingSpot",
+        533
+      ],
+      [
+        "BacterialSpot",
+        458
+      ],
+      [
+        "Anthracnose",
+        355
+      ],
+      [
+        "Healthy",
+        228
+      ]
+    ],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "sunflower_disease_classification",
+    "path": "/home/yuhanlin/Database/datasets/database/sunflower_disease_classification",
+    "images": 4250,
+    "n_classes": 3,
+    "host": "sunflower",
+    "tier": "B",
+    "top_classes": [
+      [
+        "Fresh Leaf",
+        649
+      ],
+      [
+        "Downy mildew",
+        590
+      ],
+      [
+        "Gray mold",
+        470
+      ]
+    ],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "bean_disease_uganda",
+    "path": "/home/yuhanlin/Database/datasets/database/bean_disease_uganda",
+    "images": 2590,
+    "n_classes": 3,
+    "host": "bean",
+    "tier": "B",
+    "top_classes": [
+      [
+        "bean_rust",
+        436
+      ],
+      [
+        "angular_leaf_spot",
+        432
+      ],
+      [
+        "healthy",
+        427
+      ]
+    ],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "plant_leaves",
+    "path": "/home/yuhanlin/Database/datasets/database/plant_leaves",
+    "images": 2590,
+    "n_classes": 3,
+    "host": "—",
+    "tier": "B",
+    "top_classes": [
+      [
+        "bean_rust",
+        436
+      ],
+      [
+        "angular_leaf_spot",
+        432
+      ],
+      [
+        "healthy",
+        427
+      ]
+    ],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "blackgram_plant_leaf_disease_classification",
+    "path": "/home/yuhanlin/Database/datasets/database/blackgram_plant_leaf_disease_classification",
+    "images": 2014,
+    "n_classes": 4,
+    "host": "bean",
+    "tier": "B",
+    "top_classes": [
+      [
+        "Anthracnose 230",
+        230
+      ],
+      [
+        "Yellow Mosaic 220",
+        224
+      ],
+      [
+        "Healthy 220",
+        221
+      ],
+      [
+        "Powdery Mildew 180",
+        180
+      ]
+    ],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "citrus_leaves",
+    "path": "/home/yuhanlin/Database/datasets/database/citrus_leaves",
+    "images": 1518,
+    "n_classes": 4,
+    "host": "citrus",
+    "tier": "B",
+    "top_classes": [
+      [
+        "canker",
+        241
+      ],
+      [
+        "black_spot",
+        190
+      ],
+      [
+        "healthy",
+        80
+      ],
+      [
+        "scab",
+        15
+      ]
+    ],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "DragonFruitLeafDiseaseDataset_Clean",
+    "path": "/home/yuhanlin/Database/datasets/database/DragonFruitLeafDiseaseDataset_Clean",
+    "images": 796,
+    "n_classes": 4,
+    "host": "dragonfruit",
+    "tier": "B",
+    "top_classes": [
+      [
+        "StemCanker",
+        122
+      ],
+      [
+        "Healthy",
+        96
+      ],
+      [
+        "BrownSpot_Early",
+        74
+      ],
+      [
+        "Anthracnose",
+        68
+      ]
+    ],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "grapevine_leaf_diseases",
+    "path": "/home/yuhanlin/Database/datasets/database/grapevine_leaf_diseases",
+    "images": 494,
+    "n_classes": 8,
+    "host": "grape",
+    "tier": "B",
+    "top_classes": [
+      [
+        "Downy_Mildew",
+        129
+      ],
+      [
+        "Healthy",
+        37
+      ],
+      [
+        "Anthracnose",
+        31
+      ],
+      [
+        "Powdery_Mildew",
+        18
+      ],
+      [
+        "Cercospora_Leaf_Spot",
+        11
+      ],
+      [
+        "Black_Spot",
+        8
+      ]
+    ],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "Plant_Village_Orange",
+    "path": "/home/yuhanlin/Database/datasets/database/Plant_Village_Orange",
+    "images": 121570,
+    "n_classes": 0,
+    "host": "orange/citrus",
+    "tier": "C",
+    "top_classes": [],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "Plant_Village_Soybean",
+    "path": "/home/yuhanlin/Database/datasets/database/Plant_Village_Soybean",
+    "images": 110944,
+    "n_classes": 0,
+    "host": "bean",
+    "tier": "C",
+    "top_classes": [],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "Plant_Village_Grape",
+    "path": "/home/yuhanlin/Database/datasets/database/Plant_Village_Grape",
+    "images": 92696,
+    "n_classes": 0,
+    "host": "grape",
+    "tier": "C",
+    "top_classes": [],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "Plant_Village_Tomato",
+    "path": "/home/yuhanlin/Database/datasets/database/Plant_Village_Tomato",
+    "images": 91475,
+    "n_classes": 0,
+    "host": "tomato",
+    "tier": "C",
+    "top_classes": [],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "Plant_Village_Corn",
+    "path": "/home/yuhanlin/Database/datasets/database/Plant_Village_Corn",
+    "images": 88192,
+    "n_classes": 0,
+    "host": "corn",
+    "tier": "C",
+    "top_classes": [],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "Plant_Village_Apple",
+    "path": "/home/yuhanlin/Database/datasets/database/Plant_Village_Apple",
+    "images": 78460,
+    "n_classes": 0,
+    "host": "apple",
+    "tier": "C",
+    "top_classes": [],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "Plant_Village_Peach",
+    "path": "/home/yuhanlin/Database/datasets/database/Plant_Village_Peach",
+    "images": 64844,
+    "n_classes": 0,
+    "host": "peach",
+    "tier": "C",
+    "top_classes": [],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "Plant_Village_Pepper",
+    "path": "/home/yuhanlin/Database/datasets/database/Plant_Village_Pepper",
+    "images": 58652,
+    "n_classes": 0,
+    "host": "pepper",
+    "tier": "C",
+    "top_classes": [],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "Plant_Village_Potato",
+    "path": "/home/yuhanlin/Database/datasets/database/Plant_Village_Potato",
+    "images": 55576,
+    "n_classes": 0,
+    "host": "potato",
+    "tier": "C",
+    "top_classes": [],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "Plant_Village_Cherry",
+    "path": "/home/yuhanlin/Database/datasets/database/Plant_Village_Cherry",
+    "images": 47848,
+    "n_classes": 0,
+    "host": "cherry",
+    "tier": "C",
+    "top_classes": [],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "Plant_Village_Squash",
+    "path": "/home/yuhanlin/Database/datasets/database/Plant_Village_Squash",
+    "images": 45844,
+    "n_classes": 0,
+    "host": "squash",
+    "tier": "C",
+    "top_classes": [],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "Plant_Village_Blueberry",
+    "path": "/home/yuhanlin/Database/datasets/database/Plant_Village_Blueberry",
+    "images": 44474,
+    "n_classes": 0,
+    "host": "blueberry",
+    "tier": "C",
+    "top_classes": [],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "Plant_Village_Strawberry",
+    "path": "/home/yuhanlin/Database/datasets/database/Plant_Village_Strawberry",
+    "images": 42620,
+    "n_classes": 0,
+    "host": "strawberry",
+    "tier": "C",
+    "top_classes": [],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "Plant_Village_Raspberry",
+    "path": "/home/yuhanlin/Database/datasets/database/Plant_Village_Raspberry",
+    "images": 19080,
+    "n_classes": 0,
+    "host": "raspberry",
+    "tier": "C",
+    "top_classes": [],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "LeavesDisease_FFinal",
+    "path": "/home/yuhanlin/Database/datasets/database/LeavesDisease_FFinal",
+    "images": 12995,
+    "n_classes": 0,
+    "host": "—",
+    "tier": "C",
+    "top_classes": [],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "coconut_tree_disease_classification",
+    "path": "/home/yuhanlin/Database/datasets/database/coconut_tree_disease_classification",
+    "images": 5798,
+    "n_classes": 0,
+    "host": "coconut",
+    "tier": "C",
+    "top_classes": [],
+    "organ": "tree/leaf"
+  },
+  {
+    "root": "database",
+    "name": "strawberry_disease",
+    "path": "/home/yuhanlin/Database/datasets/database/strawberry_disease",
+    "images": 5752,
+    "n_classes": 0,
+    "host": "strawberry",
+    "tier": "C",
+    "top_classes": [],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "plant_doc_detection",
+    "path": "/home/yuhanlin/Database/datasets/database/plant_doc_detection",
+    "images": 5156,
+    "n_classes": 0,
+    "host": "—",
+    "tier": "C",
+    "top_classes": [],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "PlantDoc",
+    "path": "/home/yuhanlin/Database/datasets/database/PlantDoc",
+    "images": 4607,
+    "n_classes": 0,
+    "host": "—",
+    "tier": "D",
+    "top_classes": [],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "chilli_leaf_classification",
+    "path": "/home/yuhanlin/Database/datasets/database/chilli_leaf_classification",
+    "images": 1066,
+    "n_classes": 0,
+    "host": "pepper",
+    "tier": "D",
+    "top_classes": [],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "tomato_plant",
+    "path": "/home/yuhanlin/Database/datasets/database/tomato_plant",
+    "images": 1040,
+    "n_classes": 0,
+    "host": "tomato",
+    "tier": "D",
+    "top_classes": [],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "Strawberry",
+    "path": "/home/yuhanlin/Database/datasets/database/Strawberry",
+    "images": 599,
+    "n_classes": 0,
+    "host": "strawberry",
+    "tier": "D",
+    "top_classes": [],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "AppleScabFDs",
+    "path": "/home/yuhanlin/Database/datasets/database/AppleScabFDs",
+    "images": 297,
+    "n_classes": 0,
+    "host": "apple",
+    "tier": "D",
+    "top_classes": [],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "carrot_weeds_germany",
+    "path": "/home/yuhanlin/Database/datasets/database/carrot_weeds_germany",
+    "images": 180,
+    "n_classes": 0,
+    "host": "—",
+    "tier": "D",
+    "top_classes": [],
+    "organ": "leaf"
+  },
+  {
+    "root": "database",
+    "name": "lemon_leaves",
+    "path": "/home/yuhanlin/Database/datasets/database/lemon_leaves",
+    "images": 40,
+    "n_classes": 0,
+    "host": "—",
+    "tier": "D",
+    "top_classes": [],
+    "organ": "leaf"
+  }
+]
