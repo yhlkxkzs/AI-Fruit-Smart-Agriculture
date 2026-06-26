@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "app": "afsa_mobile",
+  "detection_type": "category",
+  "task_type": "fruit_category",
+  "image_path": "incoming/category/uploads/20260626_205025_9R.AUMUx.jpg",
+  "github_model_target_id": "category_all",
+  "afsa_detection_id": "rec_1782478225590",
+  "uploaded_at": "2026-06-26T12:50:26.656006Z"
+}
