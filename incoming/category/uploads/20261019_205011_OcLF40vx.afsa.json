@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "app": "afsa_mobile",
+  "detection_type": "category",
+  "task_type": "fruit_category",
+  "image_path": "incoming/category/uploads/20261019_205011_OcLF40vx.jpg",
+  "github_model_target_id": "category_all",
+  "afsa_detection_id": "rec_1792414211349",
+  "uploaded_at": "2026-10-19T12:50:13.543722Z"
+}
